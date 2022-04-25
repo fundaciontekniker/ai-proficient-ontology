@@ -1,0 +1,926 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/ns/mls", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/eep", "https://w3id.org/fides", "https://w3id.org/affectedBy" ],
+    "title" : {
+      "en" : "The FIDES ontology"
+    },
+    "iri" : "https://w3id.org/fides",
+    "version" : "1.0",
+    "author" : [ "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>" ],
+    "description" : {
+      "en" : "The FIDES Ontology"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\r\nKerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2022-04-12",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "en",
+        "value" : "fides",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fides#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "en",
+        "value" : "2022-04-13",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The FIDES ontology",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "en",
+        "value" : "Work in Progress",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 7,
+    "objectPropertyCount" : 1,
+    "datatypePropertyCount" : 2,
+    "individualCount" : 1
+  },
+  "class" : [ {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/fides#Package",
+    "baseIri" : "https://w3id.org/fides",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fides#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Package",
+      "en" : "Package"
+    },
+    "comment" : {
+      "en" : "Group of programs which are bundled together to provide a certain functionality"
+    },
+    "id" : "7",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/affectedBy#Quality",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Quality",
+      "en" : "Quality"
+    },
+    "comment" : {
+      "undefined" : "A quality of a feature of interest. An aspect of a feature of interest that is intrinsec to and cannot exist without the feature of interest. Every quality belongs to the feature of interest it is intrinsic to."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#Process",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Process"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#InformationEntity",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InformationEntity"
+    },
+    "subClasses" : [ "7" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#FeatureOfInterest",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FeatureOfInterest",
+      "en" : "FeatureOfInterest"
+    },
+    "comment" : {
+      "undefined" : "A feature of interest is an abstraction of a real world phenomena (object, event, etc). A feature of interest is then described in terms of its properties or qualities, which are qualifiable, quantifiable, observable or operable qualities of the feature of interest."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/eep#Execution",
+    "baseIri" : "https://w3id.org/eep",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Execution",
+      "en" : "Execution"
+    },
+    "comment" : {
+      "undefined" : "An event made by an agent executing a task implemented by a procedure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/eep#Procedure",
+    "baseIri" : "https://w3id.org/eep",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Procedure",
+      "en" : "Procedure"
+    },
+    "subClasses" : [ "18" ],
+    "comment" : {
+      "undefined" : "A workflow, protocol, plan, algorithm, or computational method specifying how to produce an event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#Model",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Model"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://w3id.org/eep#Executor",
+    "baseIri" : "https://w3id.org/eep",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Executor",
+      "en" : "Executor"
+    },
+    "subClasses" : [ "27" ],
+    "comment" : {
+      "undefined" : "An agent that produces an event (Execution) by implementing a procedure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/eep/",
+      "baseIri" : "https://w3id.org",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/affectedBy/",
+      "baseIri" : "https://w3id.org",
+      "labels" : { }
+    }, {
+      "iri" : "https://w3id.org/fides#",
+      "baseIri" : "https://w3id.org/fides",
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "32"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "14",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "20",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/fides#hasFilePath",
+    "baseIri" : "https://w3id.org/fides",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fides#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFilePath",
+      "en" : "has file path"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Relative or absolute path where a file is located"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/fides#hasOperatingSystem",
+    "baseIri" : "https://w3id.org/fides",
+    "range" : "4",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fides#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOperatingSystem",
+      "en" : "has operating system"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The operating system which manages the software and hardware of a coputer, server or virtual machine."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/fides#belongsToPackage",
+    "baseIri" : "https://w3id.org/fides",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fides#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsToPackage",
+      "en" : "belongs to package"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "The package to which a given piece of software belongs to"
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#belongsTo",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsTo",
+      "en" : "belongsTo"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "A relation between qualities and features of interest. Every quality belongs to the feature of interest it is intrinsic to."
+    },
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/eep#onQuality",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "onQuality",
+      "en" : "onQuality"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Relation that links an execution to the quality it is acting upon."
+    },
+    "attributes" : [ "someValues", "functional", "external", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/eep#usedProcedure",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "usedProcedure",
+      "en" : "usedProcedure"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "A relation that links an execution to the procedure used in making the execution through an executor agent."
+    },
+    "attributes" : [ "someValues", "functional", "external", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "13",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "15",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#belongsTo",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "belongsTo",
+      "en" : "belongsTo"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "A relation between qualities and features of interest. Every quality belongs to the feature of interest it is intrinsic to."
+    },
+    "attributes" : [ "someValues", "functional", "external", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/eep#madeBy",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "madeBy",
+      "en" : "madeBy"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Relation that links an execution to the executor that made the execution."
+    },
+    "attributes" : [ "someValues", "functional", "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/eep#hasFeatureOfInterest",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFeatureOfInterest",
+      "en" : "hasFeatureOfInterest"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Relation that links an execution to the feature of interest it is acting upon."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/eep#forQuality",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "forQuality",
+      "en" : "forQuality"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Relation that links an executor to the qualities acted upon by the executions it made."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/eep#forFeatureOfInterest",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "forFeatureOfInterest",
+      "en" : "forFeatureOfInterest"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Relation that links an executor to the features of interest of the executions it made."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/eep#implements",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implements",
+      "en" : "implements"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Relation that links an agent (Executor) to a procedure that it implements."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#influencedBy",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "influencedBy",
+      "en" : "influencedBy"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "A relation between features of interest and qualities."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/affectedBy#affectedBy",
+    "baseIri" : "https://w3id.org/affectedBy",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/affectedBy/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "affectedBy",
+      "en" : "affectedBy"
+    },
+    "domain" : "9",
+    "comment" : {
+      "undefined" : "A relation between qualities. A quality is affected by another quality if the value of the latter affects the value of the former."
+    },
+    "attributes" : [ "transitive", "external", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/eep#madeBy",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "madeBy",
+      "en" : "madeBy"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Relation that links an execution to the executor that made the execution."
+    },
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/eep#usedProcedure",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "usedProcedure",
+      "en" : "usedProcedure"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "A relation that links an execution to the procedure used in making the execution through an executor agent."
+    },
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "21",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/eep#onQuality",
+    "baseIri" : "https://w3id.org/eep",
+    "range" : "9",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/eep/",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "onQuality",
+      "en" : "onQuality"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Relation that links an execution to the quality it is acting upon."
+    },
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "33"
+  } ]
+}

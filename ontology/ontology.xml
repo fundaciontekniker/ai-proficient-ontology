@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/fides#"
+     xml:base="https://w3id.org/fides"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:ns1="http://creativecommons.org/ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="https://w3id.org/fides">
+        <owl:imports rdf:resource="http://www.w3.org/2016/03/mls#"/>
+        <owl:imports rdf:resource="https://w3id.org/eep"/>
+        <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
+Meritxell Gomez &lt;mailto:meritxell.gomez@tekniker.es&gt;
+Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-12</terms:created>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;</terms:creator>
+        <terms:description xml:lang="en">The FIDES Ontology</terms:description>
+        <terms:description xml:lang="en">The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.
+
+The FIDES ontology has been developed as part of the AI-PROFICIENT project which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 957391.</terms:description>
+        <terms:issued xml:lang="en">2022-04-13</terms:issued>
+        <terms:title xml:lang="en">The FIDES ontology</terms:title>
+        <bibo:status xml:lang="en">Work in Progress</bibo:status>
+        <vann:preferredNamespacePrefix xml:lang="en">fides</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/fides#"/>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fides#belongsToPackage -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fides#belongsToPackage">
+        <rdfs:range rdf:resource="https://w3id.org/fides#Package"/>
+        <rdfs:comment xml:lang="en">The package to which a given piece of software belongs to</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
+        <rdfs:label xml:lang="en">belongs to package</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fides#hasFilePath -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#hasFilePath">
+        <rdfs:comment xml:lang="en">Relative or absolute path where a file is located</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
+        <rdfs:label xml:lang="en">has file path</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fides#hasOperatingSystem -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#hasOperatingSystem">
+        <rdfs:comment xml:lang="en">The operating system which manages the software and hardware of a coputer, server or virtual machine.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
+        <rdfs:label xml:lang="en">has operating system</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#InformationEntity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/mls#InformationEntity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#Model -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/mls#Model">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Executor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/mls#Process -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/mls#Process">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Procedure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fides#Package -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fides#Package">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/mls#InformationEntity"/>
+        <rdfs:comment xml:lang="en">Group of programs which are bundled together to provide a certain functionality</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
+        <rdfs:label xml:lang="en">Package</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fides# -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/fides#">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

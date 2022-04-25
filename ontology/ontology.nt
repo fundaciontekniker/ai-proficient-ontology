@@ -1,0 +1,160 @@
+<https://w3id.org/fides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fides> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2016/03/mls#> .
+<https://w3id.org/fides> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eep> .
+<https://w3id.org/fides> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
+<https://w3id.org/fides> <http://purl.org/dc/terms/contributor> "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\r\nKerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>" .
+<https://w3id.org/fides> <http://purl.org/dc/terms/created> "2022-04-12" .
+<https://w3id.org/fides> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>" .
+<https://w3id.org/fides> <http://purl.org/dc/terms/description> "The FIDES Ontology"@en .
+<https://w3id.org/fides> <http://purl.org/dc/terms/description> "The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.\n\nThe FIDES ontology has been developed as part of the AI-PROFICIENT project which has received funding from the European Union\u2019s Horizon 2020 research and innovation programme under grant agreement no. 957391."@en .
+<https://w3id.org/fides> <http://purl.org/dc/terms/issued> "2022-04-13"@en .
+<https://w3id.org/fides> <http://purl.org/dc/terms/title> "The FIDES ontology"@en .
+<https://w3id.org/fides> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
+<https://w3id.org/fides> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fides"@en .
+<https://w3id.org/fides> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/fides#> .
+<https://w3id.org/fides> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fides#belongsToPackage
+<https://w3id.org/fides#belongsToPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fides#belongsToPackage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fides#Package> .
+<https://w3id.org/fides#belongsToPackage> <http://www.w3.org/2000/01/rdf-schema#comment> "The package to which a given piece of software belongs to"@en .
+<https://w3id.org/fides#belongsToPackage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides#> .
+<https://w3id.org/fides#belongsToPackage> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to package"@en .
+<https://w3id.org/fides#belongsToPackage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fides#hasFilePath
+<https://w3id.org/fides#hasFilePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fides#hasFilePath> <http://www.w3.org/2000/01/rdf-schema#comment> "Relative or absolute path where a file is located"@en .
+<https://w3id.org/fides#hasFilePath> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides#> .
+<https://w3id.org/fides#hasFilePath> <http://www.w3.org/2000/01/rdf-schema#label> "has file path"@en .
+<https://w3id.org/fides#hasFilePath> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/fides#hasOperatingSystem
+<https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The operating system which manages the software and hardware of a coputer, server or virtual machine."@en .
+<https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides#> .
+<https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "has operating system"@en .
+<https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/mls#InformationEntity
+<http://www.w3.org/ns/mls#InformationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/mls#Model
+<http://www.w3.org/ns/mls#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/mls#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Executor> .
+# 
+# http://www.w3.org/ns/mls#Process
+<http://www.w3.org/ns/mls#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/mls#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Procedure> .
+# 
+# https://w3id.org/fides#Package
+<https://w3id.org/fides#Package> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fides#Package> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/mls#InformationEntity> .
+<https://w3id.org/fides#Package> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of programs which are bundled together to provide a certain functionality"@en .
+<https://w3id.org/fides#Package> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides#> .
+<https://w3id.org/fides#Package> <http://www.w3.org/2000/01/rdf-schema#label> "Package"@en .
+<https://w3id.org/fides#Package> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fides#
+<https://w3id.org/fides#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/fides#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
