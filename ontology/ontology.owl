@@ -6,13 +6,13 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/fides">
-    <Prefix name="" IRI="https://w3id.org/fides#"/>
+    <Prefix name="" IRI="https://w3id.org/fides"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.w3.org/2016/03/mls#</Import>
+    <Import>http://www.w3.org/ns/mls#</Import>
     <Import>https://w3id.org/eep</Import>
     <Annotation>
         <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
@@ -20,9 +20,9 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal>Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
+        <Literal xml:lang="tekniker.es&gt;">Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
 Meritxell Gomez &lt;mailto:meritxell.gomez@tekniker.es&gt;
-Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</Literal>
+Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
@@ -30,7 +30,8 @@ Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;</Literal>
+        <Literal xml:lang="tekniker.es&gt;">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Izaskun Fernandez &lt;mailto:izaskun.fernandez</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
@@ -70,6 +71,15 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.w3.org/ns/mls#InformationEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/mls#Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/mls#Process"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Package"/>
     </Declaration>
     <Declaration>
@@ -80,6 +90,9 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasOperatingSystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#relatedDocekerContainer"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#"/>
@@ -118,6 +131,12 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
     </Declaration>
     <Declaration>
@@ -135,18 +154,20 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <Declaration>
         <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/mls#Process"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/mls#Model"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/mls#InformationEntity"/>
-    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/mls#Implementation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#belongsToPackage"/>
+            <Class IRI="#Package"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/mls#Implementation"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#relatedDocekerContainer"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/ns/mls#Model"/>
         <Class IRI="https://w3id.org/eep#Executor"/>
@@ -154,6 +175,13 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <SubClassOf>
         <Class IRI="http://www.w3.org/ns/mls#Process"/>
         <Class IRI="https://w3id.org/eep#Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/mls#Software"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasOperatingSystem"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Package"/>
@@ -168,6 +196,36 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="#Package"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+        <IRI>http://www.w3.org/ns/mls#Dataset</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <IRI>http://www.w3.org/ns/mls#Implementation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <IRI>http://www.w3.org/ns/mls#Implementation</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+        <IRI>http://www.w3.org/ns/mls#Implementation</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+        <IRI>http://www.w3.org/ns/mls#Model</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <IRI>http://www.w3.org/ns/mls#Software</IRI>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Package</IRI>
         <Literal xml:lang="en">Group of programs which are bundled together to provide a certain functionality</Literal>
@@ -181,6 +239,11 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Package</IRI>
         <Literal xml:lang="en">Package</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <IRI>#Package</IRI>
+        <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
