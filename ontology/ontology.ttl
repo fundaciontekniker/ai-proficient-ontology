@@ -4,17 +4,18 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/fides> .
+@base <https://w3id.org/fides#> .
 
 <https://w3id.org/fides> rdf:type owl:Ontology ;
-                          owl:imports <http://www.w3.org/2016/03/mls#> ,
+                          owl:imports <http://www.w3.org/ns/mls#> ,
                                       <https://w3id.org/eep> ;
                           <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
                           <http://purl.org/dc/terms/contributor> """Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>
 Meritxell Gomez <mailto:meritxell.gomez@tekniker.es>
-Kerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>"""^^xsd:string ;
-                          <http://purl.org/dc/terms/created> "2022-04-12"^^xsd:string ;
-                          <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>"^^xsd:string ;
+Kerman Lopez de Calle <mailto:kerman.lopezdecalle"""@tekniker.es> ;
+                          <http://purl.org/dc/terms/created> "2022-04-12" ;
+                          <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Izaskun Fernandez <mailto:izaskun.fernandez"""@tekniker.es> ;
                           <http://purl.org/dc/terms/description> "The FIDES Ontology"@en ,
                                                                  """The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.
 
@@ -74,6 +75,14 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
@@ -131,6 +140,10 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 
 
+###  https://w3id.org/fides#relatedDocekerContainer
+:relatedDocekerContainer rdf:type owl:DatatypeProperty .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -139,12 +152,41 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 <http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
 
 
+###  http://www.w3.org/ns/mls#Implementation
+<http://www.w3.org/ns/mls#Implementation> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :belongsToPackage ;
+                                                            owl:someValuesFrom :Package
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :relatedDocekerContainer ;
+                                                            owl:someValuesFrom xsd:string
+                                                          ] ;
+                                          <http://purl.org/dc/terms/created> ""^^xsd:date ;
+                                          <http://purl.org/dc/terms/creator> "" ;
+                                          <http://purl.org/dc/terms/source> "" .
+
+
+###  http://www.w3.org/ns/mls#InformationEntity
+<http://www.w3.org/ns/mls#InformationEntity> rdf:type owl:Class .
+
+
 ###  http://www.w3.org/ns/mls#Model
-<http://www.w3.org/ns/mls#Model> rdfs:subClassOf <https://w3id.org/eep#Executor> .
+<http://www.w3.org/ns/mls#Model> rdf:type owl:Class ;
+                                 rdfs:subClassOf <https://w3id.org/eep#Executor> ;
+                                 <http://purl.org/dc/terms/source> "" .
 
 
 ###  http://www.w3.org/ns/mls#Process
-<http://www.w3.org/ns/mls#Process> rdfs:subClassOf <https://w3id.org/eep#Procedure> .
+<http://www.w3.org/ns/mls#Process> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://w3id.org/eep#Procedure> .
+
+
+###  http://www.w3.org/ns/mls#Software
+<http://www.w3.org/ns/mls#Software> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasOperatingSystem ;
+                                                      owl:someValuesFrom xsd:string
+                                                    ] ;
+                                    <http://purl.org/dc/terms/hasVersion> "" .
 
 
 ###  https://w3id.org/fides#Package
@@ -153,6 +195,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
          rdfs:comment "Group of programs which are bundled together to provide a certain functionality"@en ;
          rdfs:isDefinedBy : ;
          rdfs:label "Package"@en ;
+         owl:versionInfo "" ;
          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 
 
@@ -165,4 +208,11 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
            <http://purl.org/vocommons/voaf#Vocabulary> .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.w3.org/ns/mls#Dataset> <http://purl.org/dc/terms/source> "" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

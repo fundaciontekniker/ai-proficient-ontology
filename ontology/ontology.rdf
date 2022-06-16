@@ -1,27 +1,30 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/fides#"
      xml:base="https://w3id.org/fides"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ns1="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:ns1="http://creativecommons.org/ns#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://w3id.org/fides">
-        <owl:imports rdf:resource="http://www.w3.org/2016/03/mls#"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/mls#"/>
         <owl:imports rdf:resource="https://w3id.org/eep"/>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
+        <terms:contributor xml:lang="tekniker.es&gt;">Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
 Meritxell Gomez &lt;mailto:meritxell.gomez@tekniker.es&gt;
-Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</terms:contributor>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-12</terms:created>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;</terms:creator>
+Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle</terms:contributor>
+        <terms:created>2022-04-12</terms:created>
+        <terms:creator xml:lang="tekniker.es&gt;">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <terms:description xml:lang="en">The FIDES Ontology</terms:description>
         <terms:description xml:lang="en">The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.
 
@@ -125,6 +128,20 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
 
 
@@ -187,7 +204,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <rdfs:comment xml:lang="en">The package to which a given piece of software belongs to</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
         <rdfs:label xml:lang="en">belongs to package</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
+        <ns:term_status>testing</ns:term_status>
     </owl:ObjectProperty>
     
 
@@ -211,7 +228,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <rdfs:comment xml:lang="en">Relative or absolute path where a file is located</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
         <rdfs:label xml:lang="en">has file path</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stable</ns:term_status>
+        <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -223,8 +240,15 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <rdfs:comment xml:lang="en">The operating system which manages the software and hardware of a coputer, server or virtual machine.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
         <rdfs:label xml:lang="en">has operating system</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
+        <ns:term_status>testing</ns:term_status>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fides#relatedDocekerContainer -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#relatedDocekerContainer"/>
     
 
 
@@ -247,6 +271,29 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
+    <!-- http://www.w3.org/ns/mls#Implementation -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/mls#Implementation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#belongsToPackage"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/fides#Package"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#relatedDocekerContainer"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"></terms:created>
+        <terms:creator></terms:creator>
+        <terms:source></terms:source>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/ns/mls#InformationEntity -->
 
 
@@ -259,6 +306,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
 
     <owl:Class rdf:about="http://www.w3.org/ns/mls#Model">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Executor"/>
+        <terms:source></terms:source>
     </owl:Class>
     
 
@@ -272,6 +320,21 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
+    <!-- http://www.w3.org/ns/mls#Software -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/mls#Software">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#hasOperatingSystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:hasVersion></terms:hasVersion>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/fides#Package -->
 
 
@@ -280,7 +343,8 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <rdfs:comment xml:lang="en">Group of programs which are bundled together to provide a certain functionality</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
         <rdfs:label xml:lang="en">Package</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testing</ns:term_status>
+        <owl:versionInfo></owl:versionInfo>
+        <ns:term_status>testing</ns:term_status>
     </owl:Class>
     
 
@@ -303,10 +367,25 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <owl:NamedIndividual rdf:about="https://w3id.org/fides#">
         <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/mls#Dataset">
+        <terms:source></terms:source>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
 
 

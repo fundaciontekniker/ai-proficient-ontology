@@ -1,12 +1,12 @@
 <https://w3id.org/fides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/fides> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2016/03/mls#> .
+<https://w3id.org/fides> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/mls#> .
 <https://w3id.org/fides> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eep> .
 <https://w3id.org/fides> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/fides> <http://purl.org/dc/terms/contributor> "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\r\nKerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>" .
+<https://w3id.org/fides> <http://purl.org/dc/terms/contributor> "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\nKerman Lopez de Calle <mailto:kerman.lopezdecalle"@tekniker.es> .
 <https://w3id.org/fides> <http://purl.org/dc/terms/created> "2022-04-12" .
-<https://w3id.org/fides> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>" .
+<https://w3id.org/fides> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nIzaskun Fernandez <mailto:izaskun.fernandez"@tekniker.es> .
 <https://w3id.org/fides> <http://purl.org/dc/terms/description> "The FIDES Ontology"@en .
-<https://w3id.org/fides> <http://purl.org/dc/terms/description> "The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.\n\nThe FIDES ontology has been developed as part of the AI-PROFICIENT project which has received funding from the European Union\u2019s Horizon 2020 research and innovation programme under grant agreement no. 957391."@en .
+<https://w3id.org/fides> <http://purl.org/dc/terms/description> "The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.\n\nThe FIDES ontology has been developed as part of the AI-PROFICIENT project which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 957391."@en .
 <https://w3id.org/fides> <http://purl.org/dc/terms/issued> "2022-04-13"@en .
 <https://w3id.org/fides> <http://purl.org/dc/terms/title> "The FIDES ontology"@en .
 <https://w3id.org/fides> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
@@ -54,6 +54,12 @@
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -113,6 +119,9 @@
 <https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "has operating system"@en .
 <https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 # 
+# https://w3id.org/fides#relatedDocekerContainer
+<https://w3id.org/fides#relatedDocekerContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -125,16 +134,37 @@
 # http://purl.org/vocommons/voaf#Vocabulary
 <http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://www.w3.org/ns/mls#Implementation
+<http://www.w3.org/ns/mls#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fides#Package> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#belongsToPackage> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/mls#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#relatedDocekerContainer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/mls#Implementation> <http://purl.org/dc/terms/created> ""^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3.org/ns/mls#Implementation> <http://purl.org/dc/terms/creator> "" .
+<http://www.w3.org/ns/mls#Implementation> <http://purl.org/dc/terms/source> "" .
+# 
 # http://www.w3.org/ns/mls#InformationEntity
 <http://www.w3.org/ns/mls#InformationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/mls#Model
 <http://www.w3.org/ns/mls#Model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/mls#Model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Executor> .
+<http://www.w3.org/ns/mls#Model> <http://purl.org/dc/terms/source> "" .
 # 
 # http://www.w3.org/ns/mls#Process
 <http://www.w3.org/ns/mls#Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/ns/mls#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Procedure> .
+# 
+# http://www.w3.org/ns/mls#Software
+<http://www.w3.org/ns/mls#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#hasOperatingSystem> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/mls#Software> <http://purl.org/dc/terms/hasVersion> "" .
 # 
 # https://w3id.org/fides#Package
 <https://w3id.org/fides#Package> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -142,6 +172,7 @@
 <https://w3id.org/fides#Package> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of programs which are bundled together to provide a certain functionality"@en .
 <https://w3id.org/fides#Package> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides#> .
 <https://w3id.org/fides#Package> <http://www.w3.org/2000/01/rdf-schema#label> "Package"@en .
+<https://w3id.org/fides#Package> <http://www.w3.org/2002/07/owl#versionInfo> "" .
 <https://w3id.org/fides#Package> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 # 
 # 
@@ -157,4 +188,15 @@
 <https://w3id.org/fides#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/fides#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
 # 
-# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/ns/mls#Dataset> <http://purl.org/dc/terms/source> "" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
