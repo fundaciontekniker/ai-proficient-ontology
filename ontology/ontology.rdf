@@ -248,7 +248,12 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <!-- https://w3id.org/fides#relatedDocekerContainer -->
 
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#relatedDocekerContainer"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#relatedDocekerContainer">
+        <rdfs:comment>The docker container which contains the neccesary software to execute or retrain the model.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/fides#</rdfs:isDefinedBy>
+        <rdfs:label>related docker container</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
     
 
 

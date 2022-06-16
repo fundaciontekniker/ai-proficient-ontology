@@ -141,7 +141,11 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/fides#relatedDocekerContainer
-:relatedDocekerContainer rdf:type owl:DatatypeProperty .
+:relatedDocekerContainer rdf:type owl:DatatypeProperty ;
+                         rdfs:comment "The docker container which contains the neccesary software to execute or retrain the model." ;
+                         rdfs:isDefinedBy "https://w3id.org/fides#" ;
+                         rdfs:label "related docker container" ;
+                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 
 
 #################################################################

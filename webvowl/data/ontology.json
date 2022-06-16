@@ -55,16 +55,16 @@
         "value" : "1.0",
         "type" : "label"
       } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "The FIDES ontology",
-        "type" : "label"
-      } ],
       "issued" : [ {
         "identifier" : "issued",
         "language" : "en",
         "value" : "2022-04-13",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The FIDES ontology",
         "type" : "label"
       } ],
       "status" : [ {
@@ -92,28 +92,28 @@
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "35",
+    "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
-    "type" : "rdfs:Literal"
+    "id" : "47",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "37",
     "type" : "owl:Class"
   }, {
-    "id" : "52",
+    "id" : "48",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "32",
+    "id" : "33",
     "type" : "owl:Class"
-  }, {
-    "id" : "53",
-    "type" : "rdfs:Datatype"
   }, {
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
+    "id" : "58",
     "type" : "owl:Class"
   }, {
     "id" : "7",
@@ -128,10 +128,10 @@
     "id" : "22",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
     "id" : "25",
@@ -149,7 +149,7 @@
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "46",
     "type" : "owl:Class"
   }, {
     "id" : "84",
@@ -158,10 +158,10 @@
     "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "60",
     "type" : "owl:Class"
   }, {
     "id" : "88",
@@ -170,16 +170,16 @@
     "id" : "90",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
+    "id" : "56",
     "type" : "owl:Class"
   }, {
     "id" : "74",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "104",
+    "id" : "103",
     "type" : "rdfs:Literal"
   }, {
     "id" : "14",
@@ -286,15 +286,14 @@
       "undefined" : "HyperParameterSetting is an entity which connects a hyperparameter and its value that is being set before an implementation execution."
     },
     "attributes" : [ "external" ],
-    "id" : "35",
+    "id" : "41",
     "superClasses" : [ "7" ]
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "41",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "https://w3id.org/eep#Executor",
@@ -325,6 +324,14 @@
     "attributes" : [ "external" ],
     "id" : "37"
   }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
     "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
     "baseIri" : "http://purl.org/vocommons/voaf",
     "instances" : 0,
@@ -345,7 +352,7 @@
       "labels" : { }
     } ],
     "attributes" : [ "external" ],
-    "id" : "52"
+    "id" : "51"
   }, {
     "iri" : "http://www.w3.org/ns/mls#Algorithm",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -360,15 +367,8 @@
       "undefined" : "The algorithm regardless software implementation."
     },
     "attributes" : [ "external" ],
-    "id" : "32",
+    "id" : "33",
     "superClasses" : [ "7" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "53",
-    "label" : {
-      "IRI-based" : "string"
-    }
   }, {
     "iri" : "http://www.w3.org/ns/mls#Software",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -407,7 +407,7 @@
       "undefined" : "EvaluationProcedure is a technique to evaluate machine learning models. Examples are cross-validation and leave-one-out."
     },
     "attributes" : [ "external" ],
-    "id" : "59",
+    "id" : "58",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/ns/mls#InformationEntity",
@@ -416,7 +416,7 @@
     "label" : {
       "IRI-based" : "InformationEntity"
     },
-    "subClasses" : [ "49", "43", "6", "10", "21", "8", "51", "59", "22", "35", "27", "57", "32" ],
+    "subClasses" : [ "43", "31", "6", "10", "21", "8", "60", "58", "22", "41", "27", "56", "33" ],
     "attributes" : [ "external" ],
     "id" : "7"
   }, {
@@ -499,6 +499,23 @@
     "id" : "22",
     "superClasses" : [ "7" ]
   }, {
+    "iri" : "http://www.w3.org/ns/mls#DataCharacteristic",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "DataCharacteristic is a distinguishing quality or property that distinguish one data from another.\nSuch characteristics are often statistical ones (e.g., the number of instances\nor the number of features of a data set). They may be also informationtheoretic measures (e.g., class entropy of a categorical data set) or geometric measures of data complexity (e.g., the highest discriminatory power of any single feature in the data set)."
+    },
+    "label" : {
+      "IRI-based" : "DataCharacteristic"
+    },
+    "subClasses" : [ "74", "38" ],
+    "comment" : {
+      "undefined" : "DataCharacteristic is a distinguishing quality or property that distinguish one data from another.\nSuch characteristics are often statistical ones (e.g., the number of instances\nor the number of features of a data set). They may be also informationtheoretic measures (e.g., class entropy of a categorical data set) or geometric measures of data complexity (e.g., the highest discriminatory power of any single feature in the data set)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "39",
+    "superClasses" : [ "73" ]
+  }, {
     "iri" : "http://www.w3.org/ns/mls#Model",
     "baseIri" : "http://www.w3.org/ns/mls",
     "instances" : 0,
@@ -522,23 +539,6 @@
     "attributes" : [ "external" ],
     "id" : "27",
     "superClasses" : [ "37", "7" ]
-  }, {
-    "iri" : "http://www.w3.org/ns/mls#DataCharacteristic",
-    "baseIri" : "http://www.w3.org/ns/mls",
-    "instances" : 0,
-    "description" : {
-      "undefined" : "DataCharacteristic is a distinguishing quality or property that distinguish one data from another.\nSuch characteristics are often statistical ones (e.g., the number of instances\nor the number of features of a data set). They may be also informationtheoretic measures (e.g., class entropy of a categorical data set) or geometric measures of data complexity (e.g., the highest discriminatory power of any single feature in the data set)."
-    },
-    "label" : {
-      "IRI-based" : "DataCharacteristic"
-    },
-    "subClasses" : [ "74", "38" ],
-    "comment" : {
-      "undefined" : "DataCharacteristic is a distinguishing quality or property that distinguish one data from another.\nSuch characteristics are often statistical ones (e.g., the number of instances\nor the number of features of a data set). They may be also informationtheoretic measures (e.g., class entropy of a categorical data set) or geometric measures of data complexity (e.g., the highest discriminatory power of any single feature in the data set)."
-    },
-    "attributes" : [ "external" ],
-    "id" : "39",
-    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://www.w3.org/ns/mls#Run",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -617,7 +617,7 @@
       "undefined" : "ModelCharacteristic is a distinguishing quality or property that distinguish one model from another. An example model characetristic may be interpretabilty or a complexity of the model."
     },
     "attributes" : [ "external" ],
-    "id" : "45",
+    "id" : "46",
     "superClasses" : [ "73" ]
   }, {
     "iri" : "http://www.w3.org/ns/mls#Dataset",
@@ -678,7 +678,7 @@
       "undefined" : "EvaluationMeasure is a measure to assess the performance of the model generated by the process that realizes the task. Examples are predictive accuracy or f-measure."
     },
     "attributes" : [ "external" ],
-    "id" : "49",
+    "id" : "43",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/ns/mls#HyperParameter",
@@ -694,7 +694,7 @@
       "undefined" : "Hyperparameter is a prior parameter of an implementation, i.e., a parameter which is set before its execution (e.g. C, the complexity parameter, in weka.SMO)."
     },
     "attributes" : [ "external" ],
-    "id" : "51",
+    "id" : "60",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/ns/mls#ImplementationCharacteristic",
@@ -736,7 +736,7 @@
       "undefined" : "EvaluationProcedure is a technique to evaluate machine learning models. Examples are cross-validation and leave-one-out."
     },
     "attributes" : [ "external" ],
-    "id" : "57",
+    "id" : "56",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/ns/mls#DatasetCharacteristic",
@@ -762,12 +762,12 @@
       "undefined" : "ModelEvaluation is a setting of a value of the performance measure  specified by the evaluation specification. It connects a measure specification with its value."
     },
     "attributes" : [ "external" ],
-    "id" : "43",
+    "id" : "31",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "104",
+    "id" : "103",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -812,7 +812,7 @@
     "label" : {
       "IRI-based" : "Quality"
     },
-    "subClasses" : [ "88", "45", "39" ],
+    "subClasses" : [ "88", "46", "39" ],
     "attributes" : [ "external" ],
     "id" : "73"
   }, {
@@ -872,13 +872,13 @@
     "id" : "30",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "31",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "33",
+    "id" : "32",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "34",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "35",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "36",
@@ -893,31 +893,31 @@
     "id" : "44",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "46",
+    "id" : "45",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "47",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "48",
+    "id" : "49",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "50",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "54",
+    "id" : "52",
     "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "53",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "55",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "56",
+    "id" : "57",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "58",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "60",
+    "id" : "59",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "61",
@@ -1025,7 +1025,7 @@
     "id" : "102",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "103",
+    "id" : "104",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "105",
@@ -1103,7 +1103,7 @@
     "comment" : {
       "undefined" : "A relation between qualities and features of interest. Every quality belongs to the feature of interest it is intrinsic to."
     },
-    "attributes" : [ "object", "external", "functional", "someValues" ],
+    "attributes" : [ "external", "functional", "object", "someValues" ],
     "id" : "3"
   }, {
     "iri" : "http://www.w3.org/ns/mls#definedOn",
@@ -1121,7 +1121,7 @@
     "comment" : {
       "undefined" : "A relation between a task and either the data or an evaluation specification pertinent to this task."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "9"
   }, {
     "iri" : "http://www.w3.org/ns/mls#hasPart",
@@ -1138,7 +1138,7 @@
     "comment" : {
       "undefined" : "A relation which represents a part-whole relationship holding between an entity and its part."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "12"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
@@ -1149,7 +1149,7 @@
     },
     "domain" : "1",
     "subproperty" : [ "15", "16", "17", "18", "19" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "11"
   }, {
     "iri" : "http://www.w3.org/ns/mls#hasPart",
@@ -1166,7 +1166,7 @@
     "comment" : {
       "undefined" : "A relation which represents a part-whole relationship holding between an entity and its part."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "20"
   }, {
     "iri" : "http://www.w3.org/ns/mls#hasOutput",
@@ -1182,7 +1182,7 @@
     "comment" : {
       "undefined" : "A relation between a run and either a model or model evaluation that is produced on it’s output."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "26"
   }, {
     "iri" : "https://w3id.org/fides#hasOperatingSystem",
@@ -1213,6 +1213,39 @@
     "attributes" : [ "datatype", "someValues" ],
     "id" : "29"
   }, {
+    "iri" : "http://www.w3.org/ns/mls#hasOutput",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "range" : "31",
+    "description" : {
+      "undefined" : "A relation between a run and either a model or model evaluation that is produced on it’s output."
+    },
+    "label" : {
+      "IRI-based" : "hasOutput"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "A relation between a run and either a model or model evaluation that is produced on it’s output."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#realizes",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "range" : "33",
+    "description" : {
+      "undefined" : "A relation between a run and an algorithm, where the run realizes specifications formulated by the algorithm."
+    },
+    "label" : {
+      "IRI-based" : "realizes"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "A relation between a run and an algorithm, where the run realizes specifications formulated by the algorithm."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "32"
+  }, {
     "iri" : "http://www.w3.org/ns/mls#achieves",
     "baseIri" : "http://www.w3.org/ns/mls",
     "range" : "6",
@@ -1226,25 +1259,8 @@
     "comment" : {
       "undefined" : "A relation between a run and a task, where the run achieves specifications formulated by the task."
     },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "30"
-  }, {
-    "iri" : "http://www.w3.org/ns/mls#realizes",
-    "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "32",
-    "description" : {
-      "undefined" : "A relation between a run and an algorithm, where the run realizes specifications formulated by the algorithm."
-    },
-    "label" : {
-      "IRI-based" : "realizes"
-    },
-    "superproperty" : [ "11" ],
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "A relation between a run and an algorithm, where the run realizes specifications formulated by the algorithm."
-    },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "31"
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "34"
   }, {
     "iri" : "http://www.w3.org/ns/mls#hasInput",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -1261,26 +1277,8 @@
     "comment" : {
       "undefined" : "A relation between a run and data that is taken as input to the run."
     },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "33"
-  }, {
-    "iri" : "http://www.w3.org/ns/mls#hasInput",
-    "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "35",
-    "description" : {
-      "undefined" : "A relation between a run and data that is taken as input to the run."
-    },
-    "label" : {
-      "IRI-based" : "hasInput",
-      "en" : "hasInput"
-    },
-    "superproperty" : [ "11" ],
-    "domain" : "25",
-    "comment" : {
-      "undefined" : "A relation between a run and data that is taken as input to the run."
-    },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "34"
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "35"
   }, {
     "iri" : "https://w3id.org/eep#implements",
     "baseIri" : "https://w3id.org/eep",
@@ -1307,7 +1305,7 @@
     "comment" : {
       "undefined" : "Relation that links an agent (Executor) to a procedure that it implements."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "36"
   }, {
     "iri" : "http://www.w3.org/ns/mls#executes",
@@ -1324,28 +1322,46 @@
     "comment" : {
       "undefined" : "A relation between a run and an implemantation that is being executed during the run."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "40"
   }, {
-    "iri" : "http://www.w3.org/ns/mls#hasOutput",
+    "iri" : "http://www.w3.org/ns/mls#specifiedBy",
     "baseIri" : "http://www.w3.org/ns/mls",
     "range" : "43",
     "description" : {
-      "undefined" : "A relation between a run and either a model or model evaluation that is produced on it’s output."
+      "undefined" : "A relation between an entity and the information content entity that specifies it."
     },
     "label" : {
-      "IRI-based" : "hasOutput"
+      "IRI-based" : "specifiedBy"
     },
+    "domain" : "31",
+    "comment" : {
+      "undefined" : "A relation between an entity and the information content entity that specifies it."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#hasInput",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "range" : "41",
+    "description" : {
+      "undefined" : "A relation between a run and data that is taken as input to the run."
+    },
+    "label" : {
+      "IRI-based" : "hasInput",
+      "en" : "hasInput"
+    },
+    "superproperty" : [ "11" ],
     "domain" : "25",
     "comment" : {
-      "undefined" : "A relation between a run and either a model or model evaluation that is produced on it’s output."
+      "undefined" : "A relation between a run and data that is taken as input to the run."
     },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "42"
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "44"
   }, {
     "iri" : "http://www.w3.org/ns/mls#hasQuality",
     "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "45",
+    "range" : "46",
     "description" : {
       "undefined" : "A relation between entities and their various characteristics."
     },
@@ -1356,8 +1372,63 @@
     "comment" : {
       "undefined" : "A relation between entities and their various characteristics."
     },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "44"
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#hasValue",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "domain" : "31",
+    "attributes" : [ "external", "datatype", "someValues" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#implements",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "range" : "33",
+    "description" : {
+      "undefined" : "A relation between an information entity and a specification that it conforms to."
+    },
+    "label" : {
+      "IRI-based" : "implements",
+      "en" : "implements"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "A relation between an information entity and a specification that it conforms to."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/fides#relatedDocekerContainer",
+    "baseIri" : "https://w3id.org/fides",
+    "range" : "47",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fides#",
+        "type" : "label"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "relatedDocekerContainer",
+      "undefined" : "related docker container"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "The docker container which contains the neccesary software to execute or retrain the model."
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "52"
   }, {
     "iri" : "https://w3id.org/fides#belongsToPackage",
     "baseIri" : "https://w3id.org/fides",
@@ -1385,125 +1456,71 @@
       "en" : "The package to which a given piece of software belongs to"
     },
     "attributes" : [ "object", "someValues" ],
-    "id" : "46"
+    "id" : "53"
   }, {
-    "iri" : "http://www.w3.org/ns/mls#hasValue",
-    "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "41",
-    "label" : {
-      "IRI-based" : "hasValue"
-    },
-    "domain" : "43",
-    "attributes" : [ "external", "datatype", "someValues" ],
-    "id" : "47"
-  }, {
-    "iri" : "http://www.w3.org/ns/mls#specifiedBy",
-    "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "49",
-    "description" : {
-      "undefined" : "A relation between an entity and the information content entity that specifies it."
-    },
-    "label" : {
-      "IRI-based" : "specifiedBy"
-    },
-    "domain" : "43",
-    "comment" : {
-      "undefined" : "A relation between an entity and the information content entity that specifies it."
-    },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "48"
-  }, {
-    "iri" : "http://www.w3.org/ns/mls#hasHyperParameter",
-    "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "51",
-    "description" : {
-      "undefined" : "A relation between an implementation of a machine learning algorithm and its hyperparameter."
-    },
-    "label" : {
-      "IRI-based" : "hasHyperParameter",
-      "en" : "hasHyperParameter"
-    },
-    "superproperty" : [ "11" ],
-    "domain" : "22",
-    "comment" : {
-      "undefined" : "A relation between an implementation of a machine learning algorithm and its hyperparameter."
-    },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "50"
-  }, {
-    "iri" : "https://w3id.org/fides#relatedDocekerContainer",
-    "baseIri" : "https://w3id.org/fides",
-    "range" : "53",
-    "label" : {
-      "IRI-based" : "relatedDocekerContainer"
-    },
-    "domain" : "22",
-    "attributes" : [ "datatype", "someValues" ],
+    "range" : "7",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "54"
   }, {
     "range" : "7",
-    "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
     "range" : "7",
-    "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "56"
-  }, {
-    "range" : "7",
     "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "58"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
   }, {
     "range" : "7",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "60"
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
   }, {
     "range" : "7",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
     "range" : "7",
     "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "62"
   }, {
     "range" : "7",
-    "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "63"
   }, {
     "range" : "7",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "64"
   }, {
     "range" : "7",
-    "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
     "range" : "7",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "66"
   }, {
     "range" : "7",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
     "range" : "7",
-    "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
     "range" : "37",
     "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "69"
   }, {
     "iri" : "https://w3id.org/affectedBy#influencedBy",
@@ -1531,12 +1548,12 @@
     "comment" : {
       "undefined" : "A relation between features of interest and qualities."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "70"
   }, {
     "range" : "23",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "72"
   }, {
     "iri" : "https://w3id.org/affectedBy#affectedBy",
@@ -1564,12 +1581,12 @@
     "comment" : {
       "undefined" : "A relation between qualities. A quality is affected by another quality if the value of the latter affects the value of the former."
     },
-    "attributes" : [ "object", "transitive", "external" ],
+    "attributes" : [ "external", "transitive", "object" ],
     "id" : "75"
   }, {
     "range" : "23",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "77"
   }, {
     "iri" : "https://w3id.org/eep#usedProcedure",
@@ -1597,12 +1614,12 @@
     "comment" : {
       "undefined" : "A relation that links an execution to the procedure used in making the execution through an executor agent."
     },
-    "attributes" : [ "object", "external", "functional" ],
+    "attributes" : [ "external", "functional", "object" ],
     "id" : "78"
   }, {
     "range" : "23",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "79"
   }, {
     "iri" : "https://w3id.org/eep#onQuality",
@@ -1630,7 +1647,7 @@
     "comment" : {
       "undefined" : "Relation that links an execution to the quality it is acting upon."
     },
-    "attributes" : [ "object", "external", "functional", "someValues" ],
+    "attributes" : [ "external", "functional", "object", "someValues" ],
     "id" : "80"
   }, {
     "iri" : "https://w3id.org/eep#madeBy",
@@ -1658,7 +1675,7 @@
     "comment" : {
       "undefined" : "Relation that links an execution to the executor that made the execution."
     },
-    "attributes" : [ "object", "external", "functional", "someValues" ],
+    "attributes" : [ "external", "functional", "object", "someValues" ],
     "id" : "81"
   }, {
     "iri" : "https://w3id.org/eep#usedProcedure",
@@ -1686,7 +1703,7 @@
     "comment" : {
       "undefined" : "A relation that links an execution to the procedure used in making the execution through an executor agent."
     },
-    "attributes" : [ "object", "external", "functional", "someValues" ],
+    "attributes" : [ "external", "functional", "object", "someValues" ],
     "id" : "82"
   }, {
     "iri" : "https://w3id.org/affectedBy#belongsTo",
@@ -1714,7 +1731,7 @@
     "comment" : {
       "undefined" : "A relation between qualities and features of interest. Every quality belongs to the feature of interest it is intrinsic to."
     },
-    "attributes" : [ "object", "external", "functional" ],
+    "attributes" : [ "external", "functional", "object" ],
     "id" : "83"
   }, {
     "iri" : "https://w3id.org/eep#forQuality",
@@ -1742,47 +1759,47 @@
     "comment" : {
       "undefined" : "Relation that links an executor to the qualities acted upon by the executions it made."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "85"
   }, {
     "range" : "24",
     "domain" : "23",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "86"
   }, {
     "range" : "73",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "87"
   }, {
     "range" : "73",
     "domain" : "88",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "89"
   }, {
     "range" : "10",
     "domain" : "90",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "91"
   }, {
     "range" : "73",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "92"
   }, {
     "range" : "39",
     "domain" : "74",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "93"
   }, {
     "range" : "7",
-    "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "94"
   }, {
     "range" : "10",
     "domain" : "84",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "95"
   }, {
     "iri" : "https://w3id.org/eep#onQuality",
@@ -1810,12 +1827,12 @@
     "comment" : {
       "undefined" : "Relation that links an execution to the quality it is acting upon."
     },
-    "attributes" : [ "object", "external", "functional" ],
+    "attributes" : [ "external", "functional", "object" ],
     "id" : "96"
   }, {
     "range" : "39",
     "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "97"
   }, {
     "iri" : "https://w3id.org/fides#belongsToPackage",
@@ -1846,20 +1863,9 @@
     "attributes" : [ "object" ],
     "id" : "98"
   }, {
-    "iri" : "http://www.w3.org/ns/mls#defines",
-    "inverse" : "15",
-    "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "defines"
-    },
-    "domain" : "57",
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "99"
-  }, {
     "iri" : "http://www.w3.org/ns/mls#hasPart",
     "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "49",
+    "range" : "43",
     "description" : {
       "undefined" : "A relation which represents a part-whole relationship holding between an entity and its part."
     },
@@ -1867,11 +1873,28 @@
       "IRI-based" : "hasPart",
       "en" : "hasPart"
     },
-    "domain" : "57",
+    "domain" : "56",
     "comment" : {
       "undefined" : "A relation which represents a part-whole relationship holding between an entity and its part."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#hasPart",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "range" : "58",
+    "description" : {
+      "undefined" : "A relation which represents a part-whole relationship holding between an entity and its part."
+    },
+    "label" : {
+      "IRI-based" : "hasPart",
+      "en" : "hasPart"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "A relation which represents a part-whole relationship holding between an entity and its part."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "100"
   }, {
     "iri" : "http://www.w3.org/ns/mls#hasPart",
@@ -1888,51 +1911,34 @@
     "comment" : {
       "undefined" : "A relation which represents a part-whole relationship holding between an entity and its part."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "101"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#hasValue",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "domain" : "41",
+    "attributes" : [ "external", "datatype", "someValues" ],
+    "id" : "102"
   }, {
     "iri" : "http://www.w3.org/ns/mls#specifiedBy",
     "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "51",
+    "range" : "60",
     "description" : {
       "undefined" : "A relation between an entity and the information content entity that specifies it."
     },
     "label" : {
       "IRI-based" : "specifiedBy"
     },
-    "domain" : "35",
+    "domain" : "41",
     "comment" : {
       "undefined" : "A relation between an entity and the information content entity that specifies it."
     },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "102"
-  }, {
-    "iri" : "http://www.w3.org/ns/mls#hasValue",
-    "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "104",
-    "label" : {
-      "IRI-based" : "hasValue"
-    },
-    "domain" : "35",
-    "attributes" : [ "external", "datatype", "someValues" ],
-    "id" : "103"
-  }, {
-    "iri" : "http://www.w3.org/ns/mls#implements",
-    "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "32",
-    "description" : {
-      "undefined" : "A relation between an information entity and a specification that it conforms to."
-    },
-    "label" : {
-      "IRI-based" : "implements",
-      "en" : "implements"
-    },
-    "domain" : "22",
-    "comment" : {
-      "undefined" : "A relation between an information entity and a specification that it conforms to."
-    },
-    "attributes" : [ "object", "external", "someValues" ],
-    "id" : "105"
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "104"
   }, {
     "iri" : "http://www.w3.org/ns/mls#hasQuality",
     "baseIri" : "http://www.w3.org/ns/mls",
@@ -1947,7 +1953,25 @@
     "comment" : {
       "undefined" : "A relation between entities and their various characteristics."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.w3.org/ns/mls#hasHyperParameter",
+    "baseIri" : "http://www.w3.org/ns/mls",
+    "range" : "60",
+    "description" : {
+      "undefined" : "A relation between an implementation of a machine learning algorithm and its hyperparameter."
+    },
+    "label" : {
+      "IRI-based" : "hasHyperParameter",
+      "en" : "hasHyperParameter"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "A relation between an implementation of a machine learning algorithm and its hyperparameter."
+    },
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "106"
   }, {
     "iri" : "http://www.w3.org/ns/mls#hasQuality",
@@ -1963,24 +1987,18 @@
     "comment" : {
       "undefined" : "A relation between entities and their various characteristics."
     },
-    "attributes" : [ "object", "external", "someValues" ],
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "107"
   }, {
-    "iri" : "http://www.w3.org/ns/mls#hasPart",
+    "iri" : "http://www.w3.org/ns/mls#defines",
+    "inverse" : "15",
     "baseIri" : "http://www.w3.org/ns/mls",
-    "range" : "59",
-    "description" : {
-      "undefined" : "A relation which represents a part-whole relationship holding between an entity and its part."
-    },
+    "range" : "6",
     "label" : {
-      "IRI-based" : "hasPart",
-      "en" : "hasPart"
+      "IRI-based" : "defines"
     },
-    "domain" : "57",
-    "comment" : {
-      "undefined" : "A relation which represents a part-whole relationship holding between an entity and its part."
-    },
-    "attributes" : [ "object", "external", "someValues" ],
+    "domain" : "56",
+    "attributes" : [ "external", "object", "someValues" ],
     "id" : "108"
   }, {
     "iri" : "https://w3id.org/eep#hasFeatureOfInterest",
@@ -2008,7 +2026,7 @@
     "comment" : {
       "undefined" : "Relation that links an execution to the feature of interest it is acting upon."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "109"
   }, {
     "iri" : "https://w3id.org/eep#forFeatureOfInterest",
@@ -2036,7 +2054,7 @@
     "comment" : {
       "undefined" : "Relation that links an executor to the features of interest of the executions it made."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "110"
   }, {
     "iri" : "https://w3id.org/eep#madeBy",
@@ -2064,7 +2082,7 @@
     "comment" : {
       "undefined" : "Relation that links an execution to the executor that made the execution."
     },
-    "attributes" : [ "object", "external", "functional" ],
+    "attributes" : [ "external", "functional", "object" ],
     "id" : "111"
   } ]
 }
