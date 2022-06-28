@@ -83,6 +83,9 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="#Package"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ResponseFeature"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#belongsToPackage"/>
     </Declaration>
     <Declaration>
@@ -187,6 +190,10 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="#Package"/>
         <Class IRI="http://www.w3.org/ns/mls#InformationEntity"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResponseFeature"/>
+        <Class IRI="http://www.w3.org/ns/mls#Feature"/>
+    </SubClassOf>
     <ClassAssertion>
         <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
         <NamedIndividual IRI="#"/>
@@ -249,6 +256,16 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
         <IRI>#Package</IRI>
         <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResponseFeature</IRI>
+        <Literal>The feature that the predictor/model gives as ouput</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ResponseFeature</IRI>
+        <Literal>ResponseFeature</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
