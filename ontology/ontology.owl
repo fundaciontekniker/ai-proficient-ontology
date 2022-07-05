@@ -14,15 +14,16 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.w3.org/ns/mls#</Import>
     <Import>https://w3id.org/eep</Import>
+    <Import>https://w3id.org/rc</Import>
     <Annotation>
         <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
         <IRI>https://creativecommons.org/licenses/by-nc/4.0/</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal xml:lang="tekniker.es&gt;">Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
+        <Literal>Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
 Meritxell Gomez &lt;mailto:meritxell.gomez@tekniker.es&gt;
-Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle</Literal>
+Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
@@ -30,8 +31,8 @@ Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal xml:lang="tekniker.es&gt;">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
-Izaskun Fernandez &lt;mailto:izaskun.fernandez</Literal>
+        <Literal>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
@@ -45,7 +46,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
-        <Literal xml:lang="en">2022-04-13</Literal>
+        <Literal xml:lang="en">2022-07-05</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -68,6 +69,30 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal xml:lang="en">1.0</Literal>
     </Annotation>
     <Declaration>
+        <Class IRI="http://mex.aksw.org/mex-perf#ClassificationMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mex.aksw.org/mex-perf#ClusteringMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mex.aksw.org/mex-perf#ExecutionPerformance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mex.aksw.org/mex-perf#RegressionMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mex.aksw.org/mex-perf#StatisticalMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://mex.aksw.org/mex-perf#UserDefinedMeasure"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
     </Declaration>
     <Declaration>
@@ -86,16 +111,109 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="#ResponseFeature"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#wasInformedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#belongsToPackage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deployedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#accuracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#correlationCoefficient"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#cosine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#error"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#euclideanDistance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#f1Measure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#meanAbsoluteDeviation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#meanSquaredError"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#median"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#medianAbsoluteDeviation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#pearsonCorrelation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#pmi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#precision"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#predictedValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#realValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#recall"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#relativeAbsoluteError"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#residual"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#roc"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#rootMeanSquaredError"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#rootRelativeSquaredError"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#spmi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#standardDeviation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#totalError"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#associatedOperatingSystem"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasFilePath"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasOperatingSystem"/>
+        <DataProperty IRI="#relatedDocekerContainer"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#relatedDocekerContainer"/>
+        <DataProperty IRI="#storesPredictionErrorValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#storesPredictionValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#triggeredOn"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#"/>
@@ -158,6 +276,33 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="http://mex.aksw.org/mex-perf#ClassificationMeasure"/>
+        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mex.aksw.org/mex-perf#ClusteringMeasure"/>
+        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mex.aksw.org/mex-perf#ExecutionPerformance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
+            <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mex.aksw.org/mex-perf#RegressionMeasure"/>
+        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mex.aksw.org/mex-perf#StatisticalMeasure"/>
+        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://mex.aksw.org/mex-perf#UserDefinedMeasure"/>
+        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.w3.org/ns/mls#Implementation"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#belongsToPackage"/>
@@ -182,9 +327,45 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <SubClassOf>
         <Class IRI="http://www.w3.org/ns/mls#Software"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#hasOperatingSystem"/>
+            <DataProperty IRI="#associatedOperatingSystem"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/eep#Procedure"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#associatedOperatingSystem"/>
+            <DataOneOf>
+                <Literal>Ubuntu</Literal>
+                <Literal>Unknown</Literal>
+                <Literal>Windows10</Literal>
+                <Literal>Windows7</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/eep#Procedure"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#storesPredictionErrorValue"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/eep#Procedure"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#storesPredictionValue"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/eep#Procedure"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#triggeredOn"/>
+            <DataOneOf>
+                <Literal>onEvent</Literal>
+                <Literal>onRequest</Literal>
+            </DataOneOf>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Package"/>
@@ -194,6 +375,13 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="#ResponseFeature"/>
         <Class IRI="http://www.w3.org/ns/mls#Feature"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResponseFeature"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.w3.org/ns/mls#hasValue"/>
+            <Datatype abbreviatedIRI="rdfs:Literal"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
     <ClassAssertion>
         <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
         <NamedIndividual IRI="#"/>
@@ -202,6 +390,22 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <ObjectProperty IRI="#belongsToPackage"/>
         <Class IRI="#Package"/>
     </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#storesPredictionErrorValue"/>
+        <Class IRI="https://w3id.org/eep#Procedure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#storesPredictionValue"/>
+        <Class IRI="https://w3id.org/eep#Procedure"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#storesPredictionErrorValue"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#storesPredictionValue"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
         <IRI>http://www.w3.org/ns/mls#Dataset</IRI>
@@ -269,6 +473,26 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#associatedOperatingSystem</IRI>
+        <Literal xml:lang="en">The operating system which manages the software and hardware of a coputer, server or virtual machine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#associatedOperatingSystem</IRI>
+        <IRI>#</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#associatedOperatingSystem</IRI>
+        <Literal xml:lang="en">associated operating system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#associatedOperatingSystem</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#belongsToPackage</IRI>
         <Literal xml:lang="en">The package to which a given piece of software belongs to</Literal>
     </AnnotationAssertion>
@@ -285,6 +509,26 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
         <IRI>#belongsToPackage</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deployedIn</IRI>
+        <Literal>The relation to stablish the framework of deployment for a given model</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#deployedIn</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deployedIn</IRI>
+        <Literal>deployed in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#deployedIn</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -309,26 +553,6 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasOperatingSystem</IRI>
-        <Literal xml:lang="en">The operating system which manages the software and hardware of a coputer, server or virtual machine.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#hasOperatingSystem</IRI>
-        <IRI>#</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasOperatingSystem</IRI>
-        <Literal xml:lang="en">has operating system</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
-        <IRI>#hasOperatingSystem</IRI>
-        <Literal>testing</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#relatedDocekerContainer</IRI>
         <Literal>The docker container which contains the neccesary software to execute or retrain the model.</Literal>
     </AnnotationAssertion>
@@ -345,6 +569,66 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
         <IRI>#relatedDocekerContainer</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#storesPredictionErrorValue</IRI>
+        <Literal>To determine if the Procedure stores de error value between predicted value and real value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#storesPredictionErrorValue</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#storesPredictionErrorValue</IRI>
+        <Literal>stores prediction error value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#storesPredictionErrorValue</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#storesPredictionValue</IRI>
+        <Literal>To determine if the Procedure stores de predicted value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#storesPredictionValue</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#storesPredictionValue</IRI>
+        <Literal>stores prediction value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#storesPredictionValue</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#triggeredOn</IRI>
+        <Literal>The type of action that triggers the procedure execution. Typically on request, on event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#triggeredOn</IRI>
+        <IRI>#</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#triggeredOn</IRI>
+        <Literal>triggered on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#triggeredOn</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
 </Ontology>

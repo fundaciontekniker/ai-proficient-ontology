@@ -18,18 +18,19 @@
     <owl:Ontology rdf:about="https://w3id.org/fides">
         <owl:imports rdf:resource="http://www.w3.org/ns/mls#"/>
         <owl:imports rdf:resource="https://w3id.org/eep"/>
+        <owl:imports rdf:resource="https://w3id.org/rc"/>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:contributor xml:lang="tekniker.es&gt;">Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
+        <terms:contributor>Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
 Meritxell Gomez &lt;mailto:meritxell.gomez@tekniker.es&gt;
-Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle</terms:contributor>
+Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</terms:contributor>
         <terms:created>2022-04-12</terms:created>
-        <terms:creator xml:lang="tekniker.es&gt;">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
-Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
+        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:creator>
         <terms:description xml:lang="en">The FIDES Ontology</terms:description>
         <terms:description xml:lang="en">The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.
 
 The FIDES ontology has been developed as part of the AI-PROFICIENT project which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 957391.</terms:description>
-        <terms:issued xml:lang="en">2022-04-13</terms:issued>
+        <terms:issued xml:lang="en">2022-07-05</terms:issued>
         <terms:title xml:lang="en">The FIDES ontology</terms:title>
         <bibo:status xml:lang="en">Work in Progress</bibo:status>
         <vann:preferredNamespacePrefix xml:lang="en">fides</vann:preferredNamespacePrefix>
@@ -196,6 +197,27 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInformedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInformedBy"/>
+    
+
+
     <!-- https://w3id.org/fides#belongsToPackage -->
 
 
@@ -204,6 +226,18 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <rdfs:comment xml:lang="en">The package to which a given piece of software belongs to</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
         <rdfs:label xml:lang="en">belongs to package</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fides#deployedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fides#deployedIn">
+        <rdfs:comment>The relation to stablish the framework of deployment for a given model</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides"/>
+        <rdfs:label>deployed in</rdfs:label>
         <ns:term_status>testing</ns:term_status>
     </owl:ObjectProperty>
     
@@ -221,6 +255,186 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
+    <!-- http://mex.aksw.org/mex-perf#accuracy -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#accuracy"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#correlationCoefficient -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#correlationCoefficient"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#cosine -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#cosine"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#error -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#error"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#euclideanDistance -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#euclideanDistance"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#f1Measure -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#f1Measure"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#meanAbsoluteDeviation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#meanAbsoluteDeviation"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#meanSquaredError -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#meanSquaredError"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#median -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#median"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#medianAbsoluteDeviation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#medianAbsoluteDeviation"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#pearsonCorrelation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#pearsonCorrelation"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#pmi -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#pmi"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#precision -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#precision"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#predictedValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#predictedValue"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#realValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#realValue"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#recall -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#recall"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#relativeAbsoluteError -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#relativeAbsoluteError"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#residual -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#residual"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#roc -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#roc"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#rootMeanSquaredError -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#rootMeanSquaredError"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#rootRelativeSquaredError -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#rootRelativeSquaredError"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#spmi -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#spmi"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#standardDeviation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#standardDeviation"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#totalError -->
+
+
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#totalError"/>
+    
+
+
+    <!-- https://w3id.org/fides#associatedOperatingSystem -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#associatedOperatingSystem">
+        <rdfs:comment xml:lang="en">The operating system which manages the software and hardware of a coputer, server or virtual machine.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
+        <rdfs:label xml:lang="en">associated operating system</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/fides#hasFilePath -->
 
 
@@ -229,18 +443,6 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
         <rdfs:label xml:lang="en">has file path</rdfs:label>
         <ns:term_status>stable</ns:term_status>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/fides#hasOperatingSystem -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#hasOperatingSystem">
-        <rdfs:comment xml:lang="en">The operating system which manages the software and hardware of a coputer, server or virtual machine.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
-        <rdfs:label xml:lang="en">has operating system</rdfs:label>
-        <ns:term_status>testing</ns:term_status>
     </owl:DatatypeProperty>
     
 
@@ -257,6 +459,46 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
+    <!-- https://w3id.org/fides#storesPredictionErrorValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#storesPredictionErrorValue">
+        <rdfs:domain rdf:resource="https://w3id.org/eep#Procedure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>To determine if the Procedure stores de error value between predicted value and real value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides"/>
+        <rdfs:label>stores prediction error value</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fides#storesPredictionValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#storesPredictionValue">
+        <rdfs:domain rdf:resource="https://w3id.org/eep#Procedure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>To determine if the Procedure stores de predicted value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides"/>
+        <rdfs:label>stores prediction value</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fides#triggeredOn -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#triggeredOn">
+        <rdfs:comment>The type of action that triggers the procedure execution. Typically on request, on event.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
+        <rdfs:label>triggered on</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -266,6 +508,79 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
      -->
 
 
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#ClassificationMeasure -->
+
+
+    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#ClassificationMeasure">
+        <rdfs:subClassOf rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#ClusteringMeasure -->
+
+
+    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#ClusteringMeasure">
+        <rdfs:subClassOf rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure -->
+
+
+    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#ExecutionPerformance -->
+
+
+    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#ExecutionPerformance">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#generated"/>
+                <owl:someValuesFrom rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#PerformanceMeasure -->
+
+
+    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#RegressionMeasure -->
+
+
+    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#RegressionMeasure">
+        <rdfs:subClassOf rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#StatisticalMeasure -->
+
+
+    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#StatisticalMeasure">
+        <rdfs:subClassOf rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://mex.aksw.org/mex-perf#UserDefinedMeasure -->
+
+
+    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#UserDefinedMeasure">
+        <rdfs:subClassOf rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
+    </owl:Class>
     
 
 
@@ -331,11 +646,91 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <rdf:Description rdf:about="http://www.w3.org/ns/mls#Software">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/fides#hasOperatingSystem"/>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#associatedOperatingSystem"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:hasVersion></terms:hasVersion>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/eep#Procedure -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/eep#Procedure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#associatedOperatingSystem"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Ubuntu</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Unknown</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Windows10</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Windows7</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#storesPredictionErrorValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#storesPredictionValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#triggeredOn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>onEvent</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>onRequest</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -350,6 +745,23 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <rdfs:label xml:lang="en">Package</rdfs:label>
         <owl:versionInfo></owl:versionInfo>
         <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fides#ResponseFeature -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fides#ResponseFeature">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/mls#Feature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/mls#hasValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The feature that the predictor/model gives as ouput</rdfs:comment>
+        <rdfs:label>ResponseFeature</rdfs:label>
     </owl:Class>
     
 

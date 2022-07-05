@@ -1,13 +1,14 @@
 <https://w3id.org/fides> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/fides> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/mls#> .
 <https://w3id.org/fides> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eep> .
+<https://w3id.org/fides> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/rc> .
 <https://w3id.org/fides> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/fides> <http://purl.org/dc/terms/contributor> "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\nKerman Lopez de Calle <mailto:kerman.lopezdecalle"@tekniker.es> .
+<https://w3id.org/fides> <http://purl.org/dc/terms/contributor> "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\nKerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>" .
 <https://w3id.org/fides> <http://purl.org/dc/terms/created> "2022-04-12" .
-<https://w3id.org/fides> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nIzaskun Fernandez <mailto:izaskun.fernandez"@tekniker.es> .
+<https://w3id.org/fides> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nIzaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>" .
 <https://w3id.org/fides> <http://purl.org/dc/terms/description> "The FIDES Ontology"@en .
 <https://w3id.org/fides> <http://purl.org/dc/terms/description> "The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.\n\nThe FIDES ontology has been developed as part of the AI-PROFICIENT project which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 957391."@en .
-<https://w3id.org/fides> <http://purl.org/dc/terms/issued> "2022-04-13"@en .
+<https://w3id.org/fides> <http://purl.org/dc/terms/issued> "2022-07-05"@en .
 <https://w3id.org/fides> <http://purl.org/dc/terms/title> "The FIDES ontology"@en .
 <https://w3id.org/fides> <http://purl.org/ontology/bibo/status> "Work in Progress"@en .
 <https://w3id.org/fides> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fides"@en .
@@ -88,6 +89,15 @@
 # #################################################################
 # 
 # 
+# http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasInformedBy
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # https://w3id.org/fides#belongsToPackage
 <https://w3id.org/fides#belongsToPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/fides#belongsToPackage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fides#Package> .
@@ -95,6 +105,13 @@
 <https://w3id.org/fides#belongsToPackage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides#> .
 <https://w3id.org/fides#belongsToPackage> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to package"@en .
 <https://w3id.org/fides#belongsToPackage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/fides#deployedIn
+<https://w3id.org/fides#deployedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fides#deployedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation to stablish the framework of deployment for a given model" .
+<https://w3id.org/fides#deployedIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides> .
+<https://w3id.org/fides#deployedIn> <http://www.w3.org/2000/01/rdf-schema#label> "deployed in" .
+<https://w3id.org/fides#deployedIn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 # 
 # 
 # 
@@ -105,6 +122,85 @@
 # #################################################################
 # 
 # 
+# http://mex.aksw.org/mex-perf#accuracy
+<http://mex.aksw.org/mex-perf#accuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#correlationCoefficient
+<http://mex.aksw.org/mex-perf#correlationCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#cosine
+<http://mex.aksw.org/mex-perf#cosine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#error
+<http://mex.aksw.org/mex-perf#error> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#euclideanDistance
+<http://mex.aksw.org/mex-perf#euclideanDistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#f1Measure
+<http://mex.aksw.org/mex-perf#f1Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#meanAbsoluteDeviation
+<http://mex.aksw.org/mex-perf#meanAbsoluteDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#meanSquaredError
+<http://mex.aksw.org/mex-perf#meanSquaredError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#median
+<http://mex.aksw.org/mex-perf#median> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#medianAbsoluteDeviation
+<http://mex.aksw.org/mex-perf#medianAbsoluteDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#pearsonCorrelation
+<http://mex.aksw.org/mex-perf#pearsonCorrelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#pmi
+<http://mex.aksw.org/mex-perf#pmi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#precision
+<http://mex.aksw.org/mex-perf#precision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#predictedValue
+<http://mex.aksw.org/mex-perf#predictedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#realValue
+<http://mex.aksw.org/mex-perf#realValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#recall
+<http://mex.aksw.org/mex-perf#recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#relativeAbsoluteError
+<http://mex.aksw.org/mex-perf#relativeAbsoluteError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#residual
+<http://mex.aksw.org/mex-perf#residual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#roc
+<http://mex.aksw.org/mex-perf#roc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#rootMeanSquaredError
+<http://mex.aksw.org/mex-perf#rootMeanSquaredError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#rootRelativeSquaredError
+<http://mex.aksw.org/mex-perf#rootRelativeSquaredError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#spmi
+<http://mex.aksw.org/mex-perf#spmi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#standardDeviation
+<http://mex.aksw.org/mex-perf#standardDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://mex.aksw.org/mex-perf#totalError
+<http://mex.aksw.org/mex-perf#totalError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/fides#associatedOperatingSystem
+<https://w3id.org/fides#associatedOperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fides#associatedOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The operating system which manages the software and hardware of a coputer, server or virtual machine."@en .
+<https://w3id.org/fides#associatedOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides#> .
+<https://w3id.org/fides#associatedOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "associated operating system"@en .
+<https://w3id.org/fides#associatedOperatingSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
 # https://w3id.org/fides#hasFilePath
 <https://w3id.org/fides#hasFilePath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/fides#hasFilePath> <http://www.w3.org/2000/01/rdf-schema#comment> "Relative or absolute path where a file is located"@en .
@@ -112,19 +208,37 @@
 <https://w3id.org/fides#hasFilePath> <http://www.w3.org/2000/01/rdf-schema#label> "has file path"@en .
 <https://w3id.org/fides#hasFilePath> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
 # 
-# https://w3id.org/fides#hasOperatingSystem
-<https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The operating system which manages the software and hardware of a coputer, server or virtual machine."@en .
-<https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides#> .
-<https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "has operating system"@en .
-<https://w3id.org/fides#hasOperatingSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
-# 
 # https://w3id.org/fides#relatedDocekerContainer
 <https://w3id.org/fides#relatedDocekerContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/fides#relatedDocekerContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "The docker container which contains the neccesary software to execute or retrain the model." .
 <https://w3id.org/fides#relatedDocekerContainer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/fides#" .
 <https://w3id.org/fides#relatedDocekerContainer> <http://www.w3.org/2000/01/rdf-schema#label> "related docker container" .
 <https://w3id.org/fides#relatedDocekerContainer> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/fides#storesPredictionErrorValue
+<https://w3id.org/fides#storesPredictionErrorValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fides#storesPredictionErrorValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eep#Procedure> .
+<https://w3id.org/fides#storesPredictionErrorValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/fides#storesPredictionErrorValue> <http://www.w3.org/2000/01/rdf-schema#comment> "To determine if the Procedure stores de error value between predicted value and real value." .
+<https://w3id.org/fides#storesPredictionErrorValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides> .
+<https://w3id.org/fides#storesPredictionErrorValue> <http://www.w3.org/2000/01/rdf-schema#label> "stores prediction error value" .
+<https://w3id.org/fides#storesPredictionErrorValue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/fides#storesPredictionValue
+<https://w3id.org/fides#storesPredictionValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fides#storesPredictionValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eep#Procedure> .
+<https://w3id.org/fides#storesPredictionValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/fides#storesPredictionValue> <http://www.w3.org/2000/01/rdf-schema#comment> "To determine if the Procedure stores de predicted value." .
+<https://w3id.org/fides#storesPredictionValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides> .
+<https://w3id.org/fides#storesPredictionValue> <http://www.w3.org/2000/01/rdf-schema#label> "stores prediction value" .
+<https://w3id.org/fides#storesPredictionValue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/fides#triggeredOn
+<https://w3id.org/fides#triggeredOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fides#triggeredOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of action that triggers the procedure execution. Typically on request, on event." .
+<https://w3id.org/fides#triggeredOn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/fides#> .
+<https://w3id.org/fides#triggeredOn> <http://www.w3.org/2000/01/rdf-schema#label> "triggered on" .
+<https://w3id.org/fides#triggeredOn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 # 
 # 
 # 
@@ -135,18 +249,51 @@
 # #################################################################
 # 
 # 
+# http://mex.aksw.org/mex-perf#ClassificationMeasure
+<http://mex.aksw.org/mex-perf#ClassificationMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mex.aksw.org/mex-perf#ClassificationMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mex.aksw.org/mex-perf#PerformanceMeasure> .
+# 
+# http://mex.aksw.org/mex-perf#ClusteringMeasure
+<http://mex.aksw.org/mex-perf#ClusteringMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mex.aksw.org/mex-perf#ClusteringMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mex.aksw.org/mex-perf#PerformanceMeasure> .
+# 
+# http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure
+<http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://mex.aksw.org/mex-perf#ExecutionPerformance
+<http://mex.aksw.org/mex-perf#ExecutionPerformance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mex.aksw.org/mex-perf#ExecutionPerformance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://mex.aksw.org/mex-perf#PerformanceMeasure> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#generated> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://mex.aksw.org/mex-perf#PerformanceMeasure
+<http://mex.aksw.org/mex-perf#PerformanceMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://mex.aksw.org/mex-perf#RegressionMeasure
+<http://mex.aksw.org/mex-perf#RegressionMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mex.aksw.org/mex-perf#RegressionMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mex.aksw.org/mex-perf#PerformanceMeasure> .
+# 
+# http://mex.aksw.org/mex-perf#StatisticalMeasure
+<http://mex.aksw.org/mex-perf#StatisticalMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mex.aksw.org/mex-perf#StatisticalMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mex.aksw.org/mex-perf#PerformanceMeasure> .
+# 
+# http://mex.aksw.org/mex-perf#UserDefinedMeasure
+<http://mex.aksw.org/mex-perf#UserDefinedMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mex.aksw.org/mex-perf#UserDefinedMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://mex.aksw.org/mex-perf#PerformanceMeasure> .
+# 
 # http://purl.org/vocommons/voaf#Vocabulary
 <http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.w3.org/ns/mls#Implementation
-<http://www.w3.org/ns/mls#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fides#Package> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#belongsToPackage> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.w3.org/ns/mls#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#relatedDocekerContainer> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fides#Package> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#belongsToPackage> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/mls#Implementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#relatedDocekerContainer> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.w3.org/ns/mls#Implementation> <http://purl.org/dc/terms/created> ""^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://www.w3.org/ns/mls#Implementation> <http://purl.org/dc/terms/creator> "" .
 <http://www.w3.org/ns/mls#Implementation> <http://purl.org/dc/terms/source> "" .
@@ -164,11 +311,55 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.w3.org/ns/mls#Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/eep#Procedure> .
 # 
 # http://www.w3.org/ns/mls#Software
-<http://www.w3.org/ns/mls#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#hasOperatingSystem> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/mls#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#associatedOperatingSystem> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.w3.org/ns/mls#Software> <http://purl.org/dc/terms/hasVersion> "" .
+# 
+# https://w3id.org/eep#Procedure
+<https://w3id.org/eep#Procedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Windows7" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Windows10" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Unknown" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Ubuntu" .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#associatedOperatingSystem> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/eep#Procedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#storesPredictionErrorValue> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/eep#Procedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#storesPredictionValue> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/eep#Procedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onDataRange> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#oneOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "onRequest" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "onEvent" .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#triggeredOn> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/fides#Package
 <https://w3id.org/fides#Package> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -178,6 +369,16 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/fides#Package> <http://www.w3.org/2000/01/rdf-schema#label> "Package"@en .
 <https://w3id.org/fides#Package> <http://www.w3.org/2002/07/owl#versionInfo> "" .
 <https://w3id.org/fides#Package> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/fides#ResponseFeature
+<https://w3id.org/fides#ResponseFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fides#ResponseFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/mls#Feature> .
+<https://w3id.org/fides#ResponseFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/mls#hasValue> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/fides#ResponseFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "The feature that the predictor/model gives as ouput" .
+<https://w3id.org/fides#ResponseFeature> <http://www.w3.org/2000/01/rdf-schema#label> "ResponseFeature" .
 # 
 # 
 # 
