@@ -476,15 +476,13 @@
     "@id" : "https://creativecommons.org/licenses/by-nc/4.0/"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@language" : "tekniker.es>",
-    "@value" : "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\nKerman Lopez de Calle <mailto:kerman.lopezdecalle"
+    "@value" : "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\nKerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "2022-04-12"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@language" : "tekniker.es>",
-    "@value" : "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nIzaskun Fernandez <mailto:izaskun.fernandez"
+    "@value" : "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nIzaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",

@@ -3,9 +3,9 @@
 <https://w3id.org/fides> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/eep> .
 <https://w3id.org/fides> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/rc> .
 <https://w3id.org/fides> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> .
-<https://w3id.org/fides> <http://purl.org/dc/terms/contributor> "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\nKerman Lopez de Calle <mailto:kerman.lopezdecalle"@tekniker.es> .
+<https://w3id.org/fides> <http://purl.org/dc/terms/contributor> "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\nKerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>" .
 <https://w3id.org/fides> <http://purl.org/dc/terms/created> "2022-04-12" .
-<https://w3id.org/fides> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nIzaskun Fernandez <mailto:izaskun.fernandez"@tekniker.es> .
+<https://w3id.org/fides> <http://purl.org/dc/terms/creator> "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nIzaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>" .
 <https://w3id.org/fides> <http://purl.org/dc/terms/description> "The FIDES Ontology"@en .
 <https://w3id.org/fides> <http://purl.org/dc/terms/description> "The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.\n\nThe FIDES ontology has been developed as part of the AI-PROFICIENT project which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 957391."@en .
 <https://w3id.org/fides> <http://purl.org/dc/terms/issued> "2022-07-05"@en .

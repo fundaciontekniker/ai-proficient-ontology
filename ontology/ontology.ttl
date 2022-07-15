@@ -13,10 +13,10 @@
                           <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
                           <http://purl.org/dc/terms/contributor> """Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>
 Meritxell Gomez <mailto:meritxell.gomez@tekniker.es>
-Kerman Lopez de Calle <mailto:kerman.lopezdecalle"""@tekniker.es> ;
+Kerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>""" ;
                           <http://purl.org/dc/terms/created> "2022-04-12" ;
                           <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
-Izaskun Fernandez <mailto:izaskun.fernandez"""@tekniker.es> ;
+Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>""" ;
                           <http://purl.org/dc/terms/description> "The FIDES Ontology"@en ,
                                                                  """The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.
 
