@@ -246,6 +246,10 @@
 # 
 # https://w3id.org/fides#performanceMetric
 <https://w3id.org/fides#performanceMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fides#performanceMetric> <http://www.w3.org/2000/01/rdf-schema#comment> "To determine a evaluation value associated to a performance metric" .
+<https://w3id.org/fides#performanceMetric> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/fides" .
+<https://w3id.org/fides#performanceMetric> <http://www.w3.org/2000/01/rdf-schema#label> "performance metric" .
+<https://w3id.org/fides#performanceMetric> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 # 
 # https://w3id.org/fides#relatedDocekerContainer
 <https://w3id.org/fides#relatedDocekerContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

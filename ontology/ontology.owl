@@ -718,6 +718,26 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#performanceMetric</IRI>
+        <Literal>To determine a evaluation value associated to a performance metric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#performanceMetric</IRI>
+        <Literal>https://w3id.org/fides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#performanceMetric</IRI>
+        <Literal>performance metric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>#performanceMetric</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#relatedDocekerContainer</IRI>
         <Literal>The docker container which contains the neccesary software to execute or retrain the model.</Literal>
     </AnnotationAssertion>

@@ -294,7 +294,11 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/fides#performanceMetric
-:performanceMetric rdf:type owl:DatatypeProperty .
+:performanceMetric rdf:type owl:DatatypeProperty ;
+                   rdfs:comment "To determine a evaluation value associated to a performance metric" ;
+                   rdfs:isDefinedBy "https://w3id.org/fides" ;
+                   rdfs:label "performance metric" ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 
 
 ###  https://w3id.org/fides#relatedDocekerContainer
