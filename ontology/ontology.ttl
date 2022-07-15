@@ -13,10 +13,10 @@
                           <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
                           <http://purl.org/dc/terms/contributor> """Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>
 Meritxell Gomez <mailto:meritxell.gomez@tekniker.es>
-Kerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>""" ;
+Kerman Lopez de Calle <mailto:kerman.lopezdecalle"""@tekniker.es> ;
                           <http://purl.org/dc/terms/created> "2022-04-12" ;
                           <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
-Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>""" ;
+Izaskun Fernandez <mailto:izaskun.fernandez"""@tekniker.es> ;
                           <http://purl.org/dc/terms/description> "The FIDES Ontology"@en ,
                                                                  """The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.
 
@@ -146,15 +146,21 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://mex.aksw.org/mex-perf#accuracy
-<http://mex.aksw.org/mex-perf#accuracy> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#accuracy> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf :performanceMetric ;
+                                        rdfs:label "accuracy" .
 
 
 ###  http://mex.aksw.org/mex-perf#correlationCoefficient
-<http://mex.aksw.org/mex-perf#correlationCoefficient> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#correlationCoefficient> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf :performanceMetric ;
+                                                      rdfs:label "correlation coefficient" .
 
 
 ###  http://mex.aksw.org/mex-perf#cosine
-<http://mex.aksw.org/mex-perf#cosine> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#cosine> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf :performanceMetric ;
+                                      rdfs:label "cosine" .
 
 
 ###  http://mex.aksw.org/mex-perf#error
@@ -162,39 +168,57 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 
 ###  http://mex.aksw.org/mex-perf#euclideanDistance
-<http://mex.aksw.org/mex-perf#euclideanDistance> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#euclideanDistance> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf :performanceMetric ;
+                                                 rdfs:label "euclidean distance" .
 
 
 ###  http://mex.aksw.org/mex-perf#f1Measure
-<http://mex.aksw.org/mex-perf#f1Measure> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#f1Measure> rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf :performanceMetric ;
+                                         rdfs:label "f1 measure" .
 
 
 ###  http://mex.aksw.org/mex-perf#meanAbsoluteDeviation
-<http://mex.aksw.org/mex-perf#meanAbsoluteDeviation> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#meanAbsoluteDeviation> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf :performanceMetric ;
+                                                     rdfs:label "mean absolute deviation" .
 
 
 ###  http://mex.aksw.org/mex-perf#meanSquaredError
-<http://mex.aksw.org/mex-perf#meanSquaredError> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#meanSquaredError> rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf :performanceMetric ;
+                                                rdfs:label "mean squared error" .
 
 
 ###  http://mex.aksw.org/mex-perf#median
-<http://mex.aksw.org/mex-perf#median> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#median> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf :performanceMetric ;
+                                      rdfs:label "median" .
 
 
 ###  http://mex.aksw.org/mex-perf#medianAbsoluteDeviation
-<http://mex.aksw.org/mex-perf#medianAbsoluteDeviation> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#medianAbsoluteDeviation> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:subPropertyOf :performanceMetric ;
+                                                       rdfs:label "median absolute deviation" .
 
 
 ###  http://mex.aksw.org/mex-perf#pearsonCorrelation
-<http://mex.aksw.org/mex-perf#pearsonCorrelation> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#pearsonCorrelation> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:subPropertyOf :performanceMetric ;
+                                                  rdfs:label "pearson correlation" .
 
 
 ###  http://mex.aksw.org/mex-perf#pmi
-<http://mex.aksw.org/mex-perf#pmi> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#pmi> rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf :performanceMetric ;
+                                   rdfs:label "pmi" .
 
 
 ###  http://mex.aksw.org/mex-perf#precision
-<http://mex.aksw.org/mex-perf#precision> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#precision> rdf:type owl:DatatypeProperty ;
+                                         rdfs:subPropertyOf :performanceMetric ;
+                                         rdfs:label "precision" .
 
 
 ###  http://mex.aksw.org/mex-perf#predictedValue
@@ -206,27 +230,39 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 
 ###  http://mex.aksw.org/mex-perf#recall
-<http://mex.aksw.org/mex-perf#recall> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#recall> rdf:type owl:DatatypeProperty ;
+                                      rdfs:subPropertyOf :performanceMetric ;
+                                      rdfs:label "recall" .
 
 
 ###  http://mex.aksw.org/mex-perf#relativeAbsoluteError
-<http://mex.aksw.org/mex-perf#relativeAbsoluteError> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#relativeAbsoluteError> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf :performanceMetric ;
+                                                     rdfs:label "relative absolute error" .
 
 
 ###  http://mex.aksw.org/mex-perf#residual
-<http://mex.aksw.org/mex-perf#residual> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#residual> rdf:type owl:DatatypeProperty ;
+                                        rdfs:subPropertyOf :performanceMetric ;
+                                        rdfs:label "residual" .
 
 
 ###  http://mex.aksw.org/mex-perf#roc
-<http://mex.aksw.org/mex-perf#roc> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#roc> rdf:type owl:DatatypeProperty ;
+                                   rdfs:subPropertyOf :performanceMetric ;
+                                   rdfs:label "roc" .
 
 
 ###  http://mex.aksw.org/mex-perf#rootMeanSquaredError
-<http://mex.aksw.org/mex-perf#rootMeanSquaredError> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#rootMeanSquaredError> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf :performanceMetric ;
+                                                    rdfs:label "root mean squared error" .
 
 
 ###  http://mex.aksw.org/mex-perf#rootRelativeSquaredError
-<http://mex.aksw.org/mex-perf#rootRelativeSquaredError> rdf:type owl:DatatypeProperty .
+<http://mex.aksw.org/mex-perf#rootRelativeSquaredError> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf :performanceMetric ;
+                                                        rdfs:label "root relative squared error" .
 
 
 ###  http://mex.aksw.org/mex-perf#spmi
@@ -255,6 +291,10 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
              rdfs:isDefinedBy : ;
              rdfs:label "has file path"@en ;
              <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://w3id.org/fides#performanceMetric
+:performanceMetric rdf:type owl:DatatypeProperty .
 
 
 ###  https://w3id.org/fides#relatedDocekerContainer

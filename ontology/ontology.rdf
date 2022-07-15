@@ -20,12 +20,12 @@
         <owl:imports rdf:resource="https://w3id.org/eep"/>
         <owl:imports rdf:resource="https://w3id.org/rc"/>
         <ns1:license rdf:resource="https://creativecommons.org/licenses/by-nc/4.0/"/>
-        <terms:contributor>Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
+        <terms:contributor xml:lang="tekniker.es&gt;">Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
 Meritxell Gomez &lt;mailto:meritxell.gomez@tekniker.es&gt;
-Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</terms:contributor>
+Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle</terms:contributor>
         <terms:created>2022-04-12</terms:created>
-        <terms:creator>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
-Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;</terms:creator>
+        <terms:creator xml:lang="tekniker.es&gt;">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Izaskun Fernandez &lt;mailto:izaskun.fernandez</terms:creator>
         <terms:description xml:lang="en">The FIDES Ontology</terms:description>
         <terms:description xml:lang="en">The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.
 
@@ -258,21 +258,30 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <!-- http://mex.aksw.org/mex-perf#accuracy -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#accuracy"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#accuracy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>accuracy</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#correlationCoefficient -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#correlationCoefficient"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#correlationCoefficient">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>correlation coefficient</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#cosine -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#cosine"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#cosine">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>cosine</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -286,63 +295,90 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <!-- http://mex.aksw.org/mex-perf#euclideanDistance -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#euclideanDistance"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#euclideanDistance">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>euclidean distance</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#f1Measure -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#f1Measure"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#f1Measure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>f1 measure</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#meanAbsoluteDeviation -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#meanAbsoluteDeviation"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#meanAbsoluteDeviation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>mean absolute deviation</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#meanSquaredError -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#meanSquaredError"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#meanSquaredError">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>mean squared error</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#median -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#median"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#median">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>median</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#medianAbsoluteDeviation -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#medianAbsoluteDeviation"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#medianAbsoluteDeviation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>median absolute deviation</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#pearsonCorrelation -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#pearsonCorrelation"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#pearsonCorrelation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>pearson correlation</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#pmi -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#pmi"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#pmi">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>pmi</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#precision -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#precision"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#precision">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>precision</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -363,42 +399,60 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <!-- http://mex.aksw.org/mex-perf#recall -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#recall"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#recall">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>recall</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#relativeAbsoluteError -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#relativeAbsoluteError"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#relativeAbsoluteError">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>relative absolute error</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#residual -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#residual"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#residual">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>residual</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#roc -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#roc"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#roc">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>roc</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#rootMeanSquaredError -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#rootMeanSquaredError"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#rootMeanSquaredError">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>root mean squared error</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://mex.aksw.org/mex-perf#rootRelativeSquaredError -->
 
 
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#rootRelativeSquaredError"/>
+    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#rootRelativeSquaredError">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
+        <rdfs:label>root relative squared error</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -444,6 +498,13 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <rdfs:label xml:lang="en">has file path</rdfs:label>
         <ns:term_status>stable</ns:term_status>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fides#performanceMetric -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#performanceMetric"/>
     
 
 

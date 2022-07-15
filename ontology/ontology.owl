@@ -21,9 +21,9 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal>Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
+        <Literal xml:lang="tekniker.es&gt;">Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
 Meritxell Gomez &lt;mailto:meritxell.gomez@tekniker.es&gt;
-Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</Literal>
+Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
@@ -31,8 +31,8 @@ Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
-Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;</Literal>
+        <Literal xml:lang="tekniker.es&gt;">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Izaskun Fernandez &lt;mailto:izaskun.fernandez</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
@@ -202,6 +202,9 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasFilePath"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#performanceMetric"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#relatedDocekerContainer"/>
@@ -390,6 +393,78 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <ObjectProperty IRI="#belongsToPackage"/>
         <Class IRI="#Package"/>
     </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#accuracy"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#correlationCoefficient"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#cosine"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#euclideanDistance"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#f1Measure"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#meanAbsoluteDeviation"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#meanSquaredError"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#median"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#medianAbsoluteDeviation"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#pearsonCorrelation"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#pmi"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#precision"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#recall"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#relativeAbsoluteError"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#residual"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#roc"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#rootMeanSquaredError"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://mex.aksw.org/mex-perf#rootRelativeSquaredError"/>
+        <DataProperty IRI="#performanceMetric"/>
+    </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#storesPredictionErrorValue"/>
         <Class IRI="https://w3id.org/eep#Procedure"/>
@@ -406,6 +481,96 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <DataProperty IRI="#storesPredictionValue"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#accuracy</IRI>
+        <Literal>accuracy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#correlationCoefficient</IRI>
+        <Literal>correlation coefficient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#cosine</IRI>
+        <Literal>cosine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#euclideanDistance</IRI>
+        <Literal>euclidean distance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#f1Measure</IRI>
+        <Literal>f1 measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#meanAbsoluteDeviation</IRI>
+        <Literal>mean absolute deviation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#meanSquaredError</IRI>
+        <Literal>mean squared error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#median</IRI>
+        <Literal>median</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#medianAbsoluteDeviation</IRI>
+        <Literal>median absolute deviation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#pearsonCorrelation</IRI>
+        <Literal>pearson correlation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#pmi</IRI>
+        <Literal>pmi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#precision</IRI>
+        <Literal>precision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#recall</IRI>
+        <Literal>recall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#relativeAbsoluteError</IRI>
+        <Literal>relative absolute error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#residual</IRI>
+        <Literal>residual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#roc</IRI>
+        <Literal>roc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#rootMeanSquaredError</IRI>
+        <Literal>root mean squared error</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://mex.aksw.org/mex-perf#rootRelativeSquaredError</IRI>
+        <Literal>root relative squared error</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
         <IRI>http://www.w3.org/ns/mls#Dataset</IRI>
