@@ -228,6 +228,19 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
+    <!-- https://w3id.org/fides#hasPerformanceMetric -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fides#hasPerformanceMetric">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/mls#specifiedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/fides#PerformanceMeasure"/>
+        <rdfs:comment>Stablish the metric used to report the performance on a execution</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/fides</rdfs:isDefinedBy>
+        <rdfs:label>error metric</rdfs:label>
+        <ns1:term_status>testing</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -239,117 +252,9 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
-    <!-- http://mex.aksw.org/mex-perf#accuracy -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#accuracy">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>accuracy</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#correlationCoefficient -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#correlationCoefficient">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>correlation coefficient</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#cosine -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#cosine">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>cosine</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://mex.aksw.org/mex-perf#error -->
 
     <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#error"/>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#euclideanDistance -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#euclideanDistance">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>euclidean distance</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#f1Measure -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#f1Measure">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>f1 measure</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#meanAbsoluteDeviation -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#meanAbsoluteDeviation">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>mean absolute deviation</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#meanSquaredError -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#meanSquaredError">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>mean squared error</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#median -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#median">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>median</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#medianAbsoluteDeviation -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#medianAbsoluteDeviation">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>median absolute deviation</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#pearsonCorrelation -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#pearsonCorrelation">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>pearson correlation</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#pmi -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#pmi">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>pmi</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#precision -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#precision">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>precision</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -362,60 +267,6 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <!-- http://mex.aksw.org/mex-perf#realValue -->
 
     <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#realValue"/>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#recall -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#recall">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>recall</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#relativeAbsoluteError -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#relativeAbsoluteError">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>relative absolute error</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#residual -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#residual">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>residual</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#roc -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#roc">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>roc</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#rootMeanSquaredError -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#rootMeanSquaredError">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>root mean squared error</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#rootRelativeSquaredError -->
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#rootRelativeSquaredError">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/fides#performanceMetric"/>
-        <rdfs:label>root relative squared error</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -459,12 +310,13 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
-    <!-- https://w3id.org/fides#performanceMetric -->
+    <!-- https://w3id.org/fides#performaceValue -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#performanceMetric">
-        <rdfs:comment>To determine a evaluation value associated to a performance metric</rdfs:comment>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fides#performaceValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/mls#hasValue"/>
+        <rdfs:comment>Stablish the value of a metric used to report the performance on a execution</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/fides</rdfs:isDefinedBy>
-        <rdfs:label>performance metric</rdfs:label>
+        <rdfs:label>performance value</rdfs:label>
         <ns1:term_status>testing</ns1:term_status>
     </owl:DatatypeProperty>
     
@@ -529,68 +381,9 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
-    <!-- http://mex.aksw.org/mex-perf#ClassificationMeasure -->
-
-    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#ClassificationMeasure">
-        <rdfs:subClassOf rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#ClusteringMeasure -->
-
-    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#ClusteringMeasure">
-        <rdfs:subClassOf rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </owl:Class>
-    
-
-
     <!-- http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure -->
 
     <owl:Class rdf:about="http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure"/>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#ExecutionPerformance -->
-
-    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#ExecutionPerformance">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#generated"/>
-                <owl:someValuesFrom rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#PerformanceMeasure -->
-
-    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#RegressionMeasure -->
-
-    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#RegressionMeasure">
-        <rdfs:subClassOf rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#StatisticalMeasure -->
-
-    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#StatisticalMeasure">
-        <rdfs:subClassOf rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#UserDefinedMeasure -->
-
-    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#UserDefinedMeasure">
-        <rdfs:subClassOf rdf:resource="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </owl:Class>
     
 
 
@@ -662,6 +455,25 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:hasVersion></terms:hasVersion>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/eep#Execution -->
+
+    <rdf:Description rdf:about="https://w3id.org/eep#Execution">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/mls#specifiedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/fides#PerformanceMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/mls#hasValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -758,6 +570,18 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides#"/>
         <rdfs:label xml:lang="en">Package</rdfs:label>
         <owl:versionInfo></owl:versionInfo>
+        <ns1:term_status>testing</ns1:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fides#PerformanceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/fides#PerformanceMeasure">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/mls#InformationEntity"/>
+        <rdfs:comment>Performance Measure is a measure to assess the performance of an execution  .  Example: accuracy</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/fides</rdfs:isDefinedBy>
+        <rdfs:label>PerformanceMeasure</rdfs:label>
         <ns1:term_status>testing</ns1:term_status>
     </owl:Class>
     

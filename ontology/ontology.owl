@@ -77,28 +77,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal xml:lang="en">1.0</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="http://mex.aksw.org/mex-perf#ClassificationMeasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://mex.aksw.org/mex-perf#ClusteringMeasure"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://mex.aksw.org/mex-perf#ExecutionPerformance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://mex.aksw.org/mex-perf#RegressionMeasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://mex.aksw.org/mex-perf#StatisticalMeasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://mex.aksw.org/mex-perf#UserDefinedMeasure"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
@@ -117,6 +96,9 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     </Declaration>
     <Declaration>
         <Class IRI="#Package"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PerformanceMeasure"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ResponseFeature"/>
@@ -140,67 +122,16 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <ObjectProperty IRI="#deploys"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#accuracy"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#correlationCoefficient"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#cosine"/>
+        <ObjectProperty IRI="#hasPerformanceMetric"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://mex.aksw.org/mex-perf#error"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#euclideanDistance"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#f1Measure"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#meanAbsoluteDeviation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#meanSquaredError"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#median"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#medianAbsoluteDeviation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#pearsonCorrelation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#pmi"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#precision"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://mex.aksw.org/mex-perf#predictedValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://mex.aksw.org/mex-perf#realValue"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#recall"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#relativeAbsoluteError"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#residual"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#roc"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#rootMeanSquaredError"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#rootRelativeSquaredError"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://mex.aksw.org/mex-perf#spmi"/>
@@ -218,7 +149,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <DataProperty IRI="#hasFilePath"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#performanceMetric"/>
+        <DataProperty IRI="#performaceValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#relatedDocekerContainer"/>
@@ -293,33 +224,6 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="http://mex.aksw.org/mex-perf#ClassificationMeasure"/>
-        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://mex.aksw.org/mex-perf#ClusteringMeasure"/>
-        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://mex.aksw.org/mex-perf#ExecutionPerformance"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.w3.org/ns/prov#generated"/>
-            <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://mex.aksw.org/mex-perf#RegressionMeasure"/>
-        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://mex.aksw.org/mex-perf#StatisticalMeasure"/>
-        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://mex.aksw.org/mex-perf#UserDefinedMeasure"/>
-        <Class IRI="http://mex.aksw.org/mex-perf#PerformanceMeasure"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://www.w3.org/ns/mls#Implementation"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#belongsToPackage"/>
@@ -352,6 +256,20 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="http://www.w3.org/ns/mls#Software"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="#associatedOperatingSystem"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/eep#Execution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/mls#specifiedBy"/>
+            <Class IRI="#PerformanceMeasure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/eep#Execution"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://www.w3.org/ns/mls#hasValue"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
@@ -400,6 +318,10 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="http://www.w3.org/ns/mls#InformationEntity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PerformanceMeasure"/>
+        <Class IRI="http://www.w3.org/ns/mls#InformationEntity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ResponseFeature"/>
         <Class IRI="http://www.w3.org/ns/mls#Feature"/>
     </SubClassOf>
@@ -414,85 +336,25 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
         <NamedIndividual IRI="#"/>
     </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPerformanceMetric"/>
+        <ObjectProperty IRI="http://www.w3.org/ns/mls#specifiedBy"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#deployedIn"/>
         <ObjectProperty IRI="#deploys"/>
     </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPerformanceMetric"/>
+        <Class IRI="#PerformanceMeasure"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#belongsToPackage"/>
         <Class IRI="#Package"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#accuracy"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#correlationCoefficient"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#cosine"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#euclideanDistance"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#f1Measure"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#meanAbsoluteDeviation"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#meanSquaredError"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#median"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#medianAbsoluteDeviation"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#pearsonCorrelation"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#pmi"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#precision"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#recall"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#relativeAbsoluteError"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#residual"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#roc"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#rootMeanSquaredError"/>
-        <DataProperty IRI="#performanceMetric"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="http://mex.aksw.org/mex-perf#rootRelativeSquaredError"/>
-        <DataProperty IRI="#performanceMetric"/>
+        <DataProperty IRI="#performaceValue"/>
+        <DataProperty IRI="http://www.w3.org/ns/mls#hasValue"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#storesPredictionErrorValue"/>
@@ -510,96 +372,6 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <DataProperty IRI="#storesPredictionValue"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#accuracy</IRI>
-        <Literal>accuracy</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#correlationCoefficient</IRI>
-        <Literal>correlation coefficient</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#cosine</IRI>
-        <Literal>cosine</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#euclideanDistance</IRI>
-        <Literal>euclidean distance</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#f1Measure</IRI>
-        <Literal>f1 measure</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#meanAbsoluteDeviation</IRI>
-        <Literal>mean absolute deviation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#meanSquaredError</IRI>
-        <Literal>mean squared error</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#median</IRI>
-        <Literal>median</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#medianAbsoluteDeviation</IRI>
-        <Literal>median absolute deviation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#pearsonCorrelation</IRI>
-        <Literal>pearson correlation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#pmi</IRI>
-        <Literal>pmi</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#precision</IRI>
-        <Literal>precision</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#recall</IRI>
-        <Literal>recall</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#relativeAbsoluteError</IRI>
-        <Literal>relative absolute error</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#residual</IRI>
-        <Literal>residual</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#roc</IRI>
-        <Literal>roc</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#rootMeanSquaredError</IRI>
-        <Literal>root mean squared error</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://mex.aksw.org/mex-perf#rootRelativeSquaredError</IRI>
-        <Literal>root relative squared error</Literal>
-    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="terms:source"/>
         <IRI>http://www.w3.org/ns/mls#Dataset</IRI>
@@ -678,6 +450,26 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#Package</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PerformanceMeasure</IRI>
+        <Literal>Performance Measure is a measure to assess the performance of an execution  .  Example: accuracy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#PerformanceMeasure</IRI>
+        <Literal>https://w3id.org/fides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PerformanceMeasure</IRI>
+        <Literal>PerformanceMeasure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#PerformanceMeasure</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -792,22 +584,42 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#performanceMetric</IRI>
-        <Literal>To determine a evaluation value associated to a performance metric</Literal>
+        <IRI>#hasPerformanceMetric</IRI>
+        <Literal>Stablish the metric used to report the performance on a execution</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>#performanceMetric</IRI>
+        <IRI>#hasPerformanceMetric</IRI>
         <Literal>https://w3id.org/fides</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#performanceMetric</IRI>
-        <Literal>performance metric</Literal>
+        <IRI>#hasPerformanceMetric</IRI>
+        <Literal>error metric</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
-        <IRI>#performanceMetric</IRI>
+        <IRI>#hasPerformanceMetric</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#performaceValue</IRI>
+        <Literal>Stablish the value of a metric used to report the performance on a execution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#performaceValue</IRI>
+        <Literal>https://w3id.org/fides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#performaceValue</IRI>
+        <Literal>performance value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#performaceValue</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>

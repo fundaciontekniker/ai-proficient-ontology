@@ -2,13 +2,13 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/prov#generated"
+    "@id" : "https://w3id.org/fides#belongsToPackage"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://mex.aksw.org/mex-perf#PerformanceMeasure"
+    "@id" : "https://w3id.org/fides#Package"
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -21,7 +21,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -34,10 +34,10 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid15"
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/fides#triggeredOn"
@@ -47,7 +47,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -57,7 +57,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/mls#hasValue"
@@ -69,22 +69,13 @@
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/fides#belongsToPackage"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/fides#Package"
-  } ]
-}, {
-  "@id" : "_:genid3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/fides#relatedDocekerContainer"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/fides#deployedIn"
@@ -93,7 +84,7 @@
     "@id" : "https://w3id.org/fides#ExecutionProcedure"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/fides#associatedOperatingSystem"
@@ -102,10 +93,28 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/mls#specifiedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fides#PerformanceMeasure"
+  } ]
+}, {
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/mls#hasValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid7"
+    "@id" : "_:genid8"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/fides#associatedOperatingSystem"
@@ -115,7 +124,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -132,218 +141,17 @@
   "@id" : "http://creativecommons.org/ns#license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://mex.aksw.org/mex-perf#ClassificationMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://mex.aksw.org/mex-perf#PerformanceMeasure"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#ClusteringMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://mex.aksw.org/mex-perf#PerformanceMeasure"
-  } ]
-}, {
   "@id" : "http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://mex.aksw.org/mex-perf#ExecutionPerformance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid1"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#PerformanceMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#RegressionMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://mex.aksw.org/mex-perf#PerformanceMeasure"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#StatisticalMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://mex.aksw.org/mex-perf#PerformanceMeasure"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#UserDefinedMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://mex.aksw.org/mex-perf#PerformanceMeasure"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#accuracy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "accuracy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#correlationCoefficient",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "correlation coefficient"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#cosine",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "cosine"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
   "@id" : "http://mex.aksw.org/mex-perf#error",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#euclideanDistance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "euclidean distance"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#f1Measure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "f1 measure"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#meanAbsoluteDeviation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "mean absolute deviation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#meanSquaredError",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "mean squared error"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#median",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "median"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#medianAbsoluteDeviation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "median absolute deviation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#pearsonCorrelation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "pearson correlation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#pmi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "pmi"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#precision",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "precision"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
 }, {
   "@id" : "http://mex.aksw.org/mex-perf#predictedValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
   "@id" : "http://mex.aksw.org/mex-perf#realValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#recall",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "recall"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#relativeAbsoluteError",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "relative absolute error"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#residual",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "residual"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#roc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "roc"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#rootMeanSquaredError",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "root mean squared error"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
-}, {
-  "@id" : "http://mex.aksw.org/mex-perf#rootRelativeSquaredError",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "root relative squared error"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://w3id.org/fides#performanceMetric"
-  } ]
 }, {
   "@id" : "http://mex.aksw.org/mex-perf#spmi",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -428,9 +236,9 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid2"
+    "@id" : "_:genid1"
   }, {
-    "@id" : "_:genid3"
+    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/mls#InformationEntity",
@@ -444,7 +252,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/eep#Executor"
   }, {
-    "@id" : "_:genid4"
+    "@id" : "_:genid3"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/mls#Process",
@@ -461,7 +269,7 @@
     "@value" : ""
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid5"
+    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/prov#generated",
@@ -472,6 +280,13 @@
 }, {
   "@id" : "http://www.w3.org/ns/prov#wasInformedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/eep#Execution",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  } ]
 }, {
   "@id" : "https://w3id.org/fides",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -544,13 +359,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/eep#Procedure"
   }, {
-    "@id" : "_:genid6"
-  }, {
-    "@id" : "_:genid12"
+    "@id" : "_:genid7"
   }, {
     "@id" : "_:genid13"
   }, {
     "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "testing"
@@ -579,6 +394,24 @@
     "@value" : "testing"
   } ]
 }, {
+  "@id" : "https://w3id.org/fides#PerformanceMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Performance Measure is a measure to assess the performance of an execution  .  Example: accuracy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/fides"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PerformanceMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/mls#InformationEntity"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
   "@id" : "https://w3id.org/fides#ResponseFeature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -590,7 +423,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/mls#Feature"
   }, {
-    "@id" : "_:genid18"
+    "@id" : "_:genid19"
   } ]
 }, {
   "@id" : "https://w3id.org/fides#associatedOperatingSystem",
@@ -680,16 +513,40 @@
     "@value" : "stable"
   } ]
 }, {
-  "@id" : "https://w3id.org/fides#performanceMetric",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "https://w3id.org/fides#hasPerformanceMetric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "To determine a evaluation value associated to a performance metric"
+    "@value" : "Stablish the metric used to report the performance on a execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fides#PerformanceMeasure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://w3id.org/fides"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "performance metric"
+    "@value" : "error metric"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/mls#specifiedBy"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fides#performaceValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Stablish the value of a metric used to report the performance on a execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://w3id.org/fides"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "performance value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/mls#hasValue"
   } ],
   "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
     "@value" : "testing"
