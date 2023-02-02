@@ -29,9 +29,9 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:contributor"/>
-        <Literal xml:lang="tekniker.es&gt;">Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
+        <Literal>Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
 Meritxell Gomez &lt;mailto:meritxell.gomez@tekniker.es&gt;
-Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle</Literal>
+Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:created"/>
@@ -39,8 +39,8 @@ Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:creator"/>
-        <Literal xml:lang="tekniker.es&gt;">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
-Izaskun Fernandez &lt;mailto:izaskun.fernandez</Literal>
+        <Literal>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:description"/>
