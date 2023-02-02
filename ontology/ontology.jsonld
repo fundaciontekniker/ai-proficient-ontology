@@ -476,13 +476,15 @@
     "@id" : "https://creativecommons.org/licenses/by-nc/4.0/"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
-    "@value" : "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\nKerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>"
+    "@language" : "tekniker.es>",
+    "@value" : "Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>\nMeritxell Gomez <mailto:meritxell.gomez@tekniker.es>\nKerman Lopez de Calle <mailto:kerman.lopezdecalle"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "2022-04-12"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nIzaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>"
+    "@language" : "tekniker.es>",
+    "@value" : "Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>\nIzaskun Fernandez <mailto:izaskun.fernandez"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -511,7 +513,7 @@
     "@id" : "https://w3id.org/fides#"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://www.w3.org/ns/mls#"
+    "@id" : "http://www.w3.org/2016/03/mls#"
   }, {
     "@id" : "https://w3id.org/eep"
   }, {
@@ -523,10 +525,7 @@
   } ]
 }, {
   "@id" : "https://w3id.org/fides#",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://purl.org/vocommons/voaf#Vocabulary"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/vocommons/voaf#Vocabulary" ]
 }, {
   "@id" : "https://w3id.org/fides#Package",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],

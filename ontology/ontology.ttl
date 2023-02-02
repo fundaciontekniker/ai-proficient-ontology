@@ -1,31 +1,39 @@
-@prefix : <https://w3id.org/fides#> .
+@prefix : <https://w3id.org/fides> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix ns1: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/fides#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix cpannotationschema: <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#> .
+@base <https://w3id.org/fides> .
 
 <https://w3id.org/fides> rdf:type owl:Ontology ;
-                          owl:imports <http://www.w3.org/ns/mls#> ,
+                          owl:imports <http://www.w3.org/2016/03/mls#> ,
                                       <https://w3id.org/eep> ,
                                       <https://w3id.org/rc> ;
-                          <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-nc/4.0/> ;
-                          <http://purl.org/dc/terms/contributor> """Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>
+                          ns:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+                          terms:contributor """Susana Ferreiro <mailto:susana.ferreiro@tekniker.es>
 Meritxell Gomez <mailto:meritxell.gomez@tekniker.es>
-Kerman Lopez de Calle <mailto:kerman.lopezdecalle@tekniker.es>""" ;
-                          <http://purl.org/dc/terms/created> "2022-04-12" ;
-                          <http://purl.org/dc/terms/creator> """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
-Izaskun Fernandez <mailto:izaskun.fernandez@tekniker.es>""" ;
-                          <http://purl.org/dc/terms/description> "The FIDES Ontology"@en ,
-                                                                 """The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.
+Kerman Lopez de Calle <mailto:kerman.lopezdecalle"""@tekniker.es> ;
+                          terms:created "2022-04-12" ;
+                          terms:creator """Iker Esnaola-Gonzalez <mailto:iker.esnaola@tekniker.es>
+Izaskun Fernandez <mailto:izaskun.fernandez"""@tekniker.es> ;
+                          terms:description "The FIDES Ontology"@en ,
+                                            """The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.
 
 The FIDES ontology has been developed as part of the AI-PROFICIENT project which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 957391."""@en ;
-                          <http://purl.org/dc/terms/issued> "2022-07-05"@en ;
-                          <http://purl.org/dc/terms/title> "The FIDES ontology"@en ;
-                          <http://purl.org/ontology/bibo/status> "Work in Progress"@en ;
-                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "fides"@en ;
-                          <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
+                          terms:issued "2022-07-05"@en ;
+                          terms:title "The FIDES ontology"@en ;
+                          bibo:status "Work in Progress"@en ;
+                          vann:preferredNamespacePrefix "fides"@en ;
+                          vann:preferredNamespaceUri : ;
                           owl:versionInfo "1.0"@en .
 
 #################################################################
@@ -33,71 +41,71 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
 #################################################################
 
 ###  http://creativecommons.org/ns#license
-<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+ns:license rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/date
-<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+dc:date rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/description
-<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+dc:description rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/publisher
-<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+dc:publisher rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+dc:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/contributor
-<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+terms:contributor rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+terms:created rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
-<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+terms:creator rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+terms:description rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/issued
-<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+terms:issued rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+terms:license rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/modified
-<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+terms:modified rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/source
-<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+terms:source rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title
-<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+terms:title rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/ontology/bibo/status
-<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+bibo:status rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2002/07/owl#versionInfo
@@ -105,7 +113,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
-<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+ns1:term_status rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -130,7 +138,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                   rdfs:comment "The package to which a given piece of software belongs to"@en ;
                   rdfs:isDefinedBy : ;
                   rdfs:label "belongs to package"@en ;
-                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+                  ns1:term_status "testing" .
 
 
 ###  https://w3id.org/fides#deployedIn
@@ -138,7 +146,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
             rdfs:comment "The relation to stablish the framework of deployment for a given model" ;
             rdfs:isDefinedBy <https://w3id.org/fides> ;
             rdfs:label "deployed in" ;
-            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+            ns1:term_status "testing" .
 
 
 #################################################################
@@ -282,7 +290,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                            rdfs:comment "The operating system which manages the software and hardware of a coputer, server or virtual machine."@en ;
                            rdfs:isDefinedBy : ;
                            rdfs:label "associated operating system"@en ;
-                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+                           ns1:term_status "testing" .
 
 
 ###  https://w3id.org/fides#hasFilePath
@@ -290,7 +298,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
              rdfs:comment "Relative or absolute path where a file is located"@en ;
              rdfs:isDefinedBy : ;
              rdfs:label "has file path"@en ;
-             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+             ns1:term_status "stable" .
 
 
 ###  https://w3id.org/fides#performanceMetric
@@ -298,7 +306,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                    rdfs:comment "To determine a evaluation value associated to a performance metric" ;
                    rdfs:isDefinedBy "https://w3id.org/fides" ;
                    rdfs:label "performance metric" ;
-                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+                   ns1:term_status "testing" .
 
 
 ###  https://w3id.org/fides#relatedDocekerContainer
@@ -306,7 +314,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                          rdfs:comment "The docker container which contains the neccesary software to execute or retrain the model." ;
                          rdfs:isDefinedBy "https://w3id.org/fides#" ;
                          rdfs:label "related docker container" ;
-                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+                         ns1:term_status "testing" .
 
 
 ###  https://w3id.org/fides#storesPredictionErrorValue
@@ -316,7 +324,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                             rdfs:comment "To determine if the Procedure stores de error value between predicted value and real value." ;
                             rdfs:isDefinedBy <https://w3id.org/fides> ;
                             rdfs:label "stores prediction error value" ;
-                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+                            ns1:term_status "testing" .
 
 
 ###  https://w3id.org/fides#storesPredictionValue
@@ -326,7 +334,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                        rdfs:comment "To determine if the Procedure stores de predicted value." ;
                        rdfs:isDefinedBy <https://w3id.org/fides> ;
                        rdfs:label "stores prediction value" ;
-                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+                       ns1:term_status "testing" .
 
 
 ###  https://w3id.org/fides#triggeredOn
@@ -334,7 +342,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
              rdfs:comment "The type of action that triggers the procedure execution. Typically on request, on event." ;
              rdfs:isDefinedBy : ;
              rdfs:label "triggered on" ;
-             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+             ns1:term_status "testing" .
 
 
 #################################################################
@@ -395,9 +403,9 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                                                             owl:onProperty :relatedDocekerContainer ;
                                                             owl:someValuesFrom xsd:string
                                                           ] ;
-                                          <http://purl.org/dc/terms/created> ""^^xsd:date ;
-                                          <http://purl.org/dc/terms/creator> "" ;
-                                          <http://purl.org/dc/terms/source> "" .
+                                          terms:created ""^^xsd:date ;
+                                          terms:creator "" ;
+                                          terms:source "" .
 
 
 ###  http://www.w3.org/ns/mls#InformationEntity
@@ -407,7 +415,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 ###  http://www.w3.org/ns/mls#Model
 <http://www.w3.org/ns/mls#Model> rdf:type owl:Class ;
                                  rdfs:subClassOf <https://w3id.org/eep#Executor> ;
-                                 <http://purl.org/dc/terms/source> "" .
+                                 terms:source "" .
 
 
 ###  http://www.w3.org/ns/mls#Process
@@ -420,7 +428,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                                                       owl:onProperty :associatedOperatingSystem ;
                                                       owl:someValuesFrom xsd:string
                                                     ] ;
-                                    <http://purl.org/dc/terms/hasVersion> "" .
+                                    terms:hasVersion "" .
 
 
 ###  https://w3id.org/eep#Procedure
@@ -475,7 +483,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
          rdfs:isDefinedBy : ;
          rdfs:label "Package"@en ;
          owl:versionInfo "" ;
-         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+         ns1:term_status "testing" .
 
 
 ###  https://w3id.org/fides#ResponseFeature
@@ -502,7 +510,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 #    Annotations
 #################################################################
 
-<http://www.w3.org/ns/mls#Dataset> <http://purl.org/dc/terms/source> "" .
+<http://www.w3.org/ns/mls#Dataset> terms:source "" .
 
 
-###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
