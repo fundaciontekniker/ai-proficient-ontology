@@ -313,48 +313,6 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
-    <!-- http://mex.aksw.org/mex-perf#error -->
-
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#error"/>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#predictedValue -->
-
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#predictedValue"/>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#realValue -->
-
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#realValue"/>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#spmi -->
-
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#spmi"/>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#standardDeviation -->
-
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#standardDeviation"/>
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#totalError -->
-
-
-    <owl:DatatypeProperty rdf:about="http://mex.aksw.org/mex-perf#totalError"/>
-    
-
-
     <!-- http://www.w3.org/ns/mls#hasValue -->
 
 
@@ -460,13 +418,6 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
      -->
 
 
-    
-
-
-    <!-- http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure -->
-
-
-    <owl:Class rdf:about="http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure"/>
     
 
 

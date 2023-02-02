@@ -180,30 +180,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  http://mex.aksw.org/mex-perf#error
-<http://mex.aksw.org/mex-perf#error> rdf:type owl:DatatypeProperty .
-
-
-###  http://mex.aksw.org/mex-perf#predictedValue
-<http://mex.aksw.org/mex-perf#predictedValue> rdf:type owl:DatatypeProperty .
-
-
-###  http://mex.aksw.org/mex-perf#realValue
-<http://mex.aksw.org/mex-perf#realValue> rdf:type owl:DatatypeProperty .
-
-
-###  http://mex.aksw.org/mex-perf#spmi
-<http://mex.aksw.org/mex-perf#spmi> rdf:type owl:DatatypeProperty .
-
-
-###  http://mex.aksw.org/mex-perf#standardDeviation
-<http://mex.aksw.org/mex-perf#standardDeviation> rdf:type owl:DatatypeProperty .
-
-
-###  http://mex.aksw.org/mex-perf#totalError
-<http://mex.aksw.org/mex-perf#totalError> rdf:type owl:DatatypeProperty .
-
-
 ###  http://www.w3.org/ns/mls#hasValue
 <http://www.w3.org/ns/mls#hasValue> rdf:type owl:DatatypeProperty .
 
@@ -272,10 +248,6 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Classes
 #################################################################
-
-###  http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure
-<http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure> rdf:type owl:Class .
-
 
 ###  http://purl.org/vocommons/voaf#Vocabulary
 <http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .

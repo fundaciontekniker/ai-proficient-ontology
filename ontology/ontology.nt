@@ -157,24 +157,6 @@
 # #################################################################
 # 
 # 
-# http://mex.aksw.org/mex-perf#error
-<http://mex.aksw.org/mex-perf#error> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://mex.aksw.org/mex-perf#predictedValue
-<http://mex.aksw.org/mex-perf#predictedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://mex.aksw.org/mex-perf#realValue
-<http://mex.aksw.org/mex-perf#realValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://mex.aksw.org/mex-perf#spmi
-<http://mex.aksw.org/mex-perf#spmi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://mex.aksw.org/mex-perf#standardDeviation
-<http://mex.aksw.org/mex-perf#standardDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
-# http://mex.aksw.org/mex-perf#totalError
-<http://mex.aksw.org/mex-perf#totalError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
 # http://www.w3.org/ns/mls#hasValue
 <http://www.w3.org/ns/mls#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 # 
@@ -240,9 +222,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure
-<http://mex.aksw.org/mex-perf#ExamplePerformanceMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://purl.org/vocommons/voaf#Vocabulary
 <http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
