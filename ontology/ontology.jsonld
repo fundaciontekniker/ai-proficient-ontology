@@ -525,7 +525,7 @@
     "@value" : "https://w3id.org/fides"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "error metric"
+    "@value" : "hasPerformanceMeasure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/ns/mls#specifiedBy"

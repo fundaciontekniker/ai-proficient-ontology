@@ -595,7 +595,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPerformanceMetric</IRI>
-        <Literal>error metric</Literal>
+        <Literal>hasPerformanceMeasure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="ns1:term_status"/>

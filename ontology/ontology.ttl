@@ -164,7 +164,7 @@ ns1:term_status rdf:type owl:AnnotationProperty .
                       rdfs:domain :PerformanceMeasure ;
                       rdfs:comment "Stablish the metric used to report the performance on a execution" ;
                       rdfs:isDefinedBy "https://w3id.org/fides" ;
-                      rdfs:label "error metric" ;
+                      rdfs:label "hasPerformanceMeasure" ;
                       ns1:term_status "testing" .
 
 

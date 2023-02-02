@@ -235,7 +235,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <rdfs:domain rdf:resource="https://w3id.org/fides#PerformanceMeasure"/>
         <rdfs:comment>Stablish the metric used to report the performance on a execution</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/fides</rdfs:isDefinedBy>
-        <rdfs:label>error metric</rdfs:label>
+        <rdfs:label>hasPerformanceMeasure</rdfs:label>
         <ns1:term_status>testing</ns1:term_status>
     </owl:ObjectProperty>
     
