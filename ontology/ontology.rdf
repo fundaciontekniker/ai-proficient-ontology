@@ -208,9 +208,21 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <!-- https://w3id.org/fides#deployedIn -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/fides#deployedIn">
+        <owl:inverseOf rdf:resource="https://w3id.org/fides#deploys"/>
         <rdfs:comment>The relation to stablish the framework of deployment for a given model</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/fides"/>
         <rdfs:label>deployed in</rdfs:label>
+        <ns1:term_status>testing</ns1:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fides#deploys -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fides#deploys">
+        <rdfs:comment>The relation to stablish which model(s) is(are) deployed within a framework of deployment</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/fides</rdfs:isDefinedBy>
+        <rdfs:label>deploys</rdfs:label>
         <ns1:term_status>testing</ns1:term_status>
     </owl:ObjectProperty>
     
@@ -620,6 +632,12 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
 
     <owl:Class rdf:about="http://www.w3.org/ns/mls#Model">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Executor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#deployedIn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/fides#ExecutionProcedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <terms:source></terms:source>
     </owl:Class>
     
@@ -629,6 +647,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
 
     <owl:Class rdf:about="http://www.w3.org/ns/mls#Process">
         <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Procedure"/>
+        <rdfs:comment>Training process</rdfs:comment>
     </owl:Class>
     
 
@@ -647,9 +666,10 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     
 
 
-    <!-- https://w3id.org/eep#Procedure -->
+    <!-- https://w3id.org/fides#ExecutionProcedure -->
 
-    <rdf:Description rdf:about="https://w3id.org/eep#Procedure">
+    <owl:Class rdf:about="https://w3id.org/fides#ExecutionProcedure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/eep#Procedure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/fides#associatedOperatingSystem"/>
@@ -722,7 +742,11 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
                 </owl:onDataRange>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+        <rdfs:comment>Represents the characteristic of a model deployment enviroment and how its  execution is triggered.</rdfs:comment>
+        <rdfs:isDefinedBy>https://w3id.org/fides</rdfs:isDefinedBy>
+        <rdfs:label>Execution Procedure</rdfs:label>
+        <ns1:term_status>testing</ns1:term_status>
+    </owl:Class>
     
 
 

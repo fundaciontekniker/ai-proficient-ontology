@@ -7,61 +7,69 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/fides">
     <Prefix name="" IRI="https://w3id.org/fides"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="ns1" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="bibo" IRI="http://purl.org/ontology/bibo/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.w3.org/ns/mls#</Import>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="cpannotationschema" IRI="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"/>
+    <Import>http://www.w3.org/2016/03/mls#</Import>
     <Import>https://w3id.org/eep</Import>
     <Import>https://w3id.org/rc</Import>
     <Annotation>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <AnnotationProperty abbreviatedIRI="ns:license"/>
         <IRI>https://creativecommons.org/licenses/by-nc/4.0/</IRI>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <Literal>Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal xml:lang="tekniker.es&gt;">Susana Ferreiro &lt;mailto:susana.ferreiro@tekniker.es&gt;
 Meritxell Gomez &lt;mailto:meritxell.gomez@tekniker.es&gt;
-Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle@tekniker.es&gt;</Literal>
+Kerman Lopez de Calle &lt;mailto:kerman.lopezdecalle</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
         <Literal>2022-04-12</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <Literal>Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
-Izaskun Fernandez &lt;mailto:izaskun.fernandez@tekniker.es&gt;</Literal>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
+        <Literal xml:lang="tekniker.es&gt;">Iker Esnaola-Gonzalez &lt;mailto:iker.esnaola@tekniker.es&gt;
+Izaskun Fernandez &lt;mailto:izaskun.fernandez</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
         <Literal xml:lang="en">The FIDES Ontology</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
         <Literal xml:lang="en">The FIDES ontology aims to formalize and represent all the relevant information to make Machine Learning-based systems accountable.
 
 The FIDES ontology has been developed as part of the AI-PROFICIENT project which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement no. 957391.</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
         <Literal xml:lang="en">2022-07-05</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
         <Literal xml:lang="en">The FIDES ontology</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/ontology/bibo/status"/>
+        <AnnotationProperty abbreviatedIRI="bibo:status"/>
         <Literal xml:lang="en">Work in Progress</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
         <Literal xml:lang="en">fides</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
         <IRI>#</IRI>
     </Annotation>
     <Annotation>
@@ -105,6 +113,9 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="http://www.w3.org/ns/mls#Process"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ExecutionProcedure"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Package"/>
     </Declaration>
     <Declaration>
@@ -124,6 +135,9 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#deployedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deploys"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://mex.aksw.org/mex-perf#accuracy"/>
@@ -222,61 +236,61 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <NamedIndividual IRI="#"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://creativecommons.org/ns#license"/>
+        <AnnotationProperty abbreviatedIRI="ns:license"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+        <AnnotationProperty abbreviatedIRI="terms:description"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <AnnotationProperty abbreviatedIRI="terms:issued"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <AnnotationProperty abbreviatedIRI="terms:modified"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+        <AnnotationProperty abbreviatedIRI="terms:source"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <AnnotationProperty abbreviatedIRI="terms:title"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/ontology/bibo/status"/>
+        <AnnotationProperty abbreviatedIRI="bibo:status"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="http://mex.aksw.org/mex-perf#ClassificationMeasure"/>
@@ -324,6 +338,13 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="https://w3id.org/eep#Executor"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/mls#Model"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#deployedIn"/>
+            <Class IRI="#ExecutionProcedure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.w3.org/ns/mls#Process"/>
         <Class IRI="https://w3id.org/eep#Procedure"/>
     </SubClassOf>
@@ -335,7 +356,11 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ExecutionProcedure"/>
         <Class IRI="https://w3id.org/eep#Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExecutionProcedure"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="#associatedOperatingSystem"/>
             <DataOneOf>
@@ -347,21 +372,21 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/eep#Procedure"/>
+        <Class IRI="#ExecutionProcedure"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="#storesPredictionErrorValue"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/eep#Procedure"/>
+        <Class IRI="#ExecutionProcedure"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="#storesPredictionValue"/>
             <Datatype abbreviatedIRI="xsd:boolean"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://w3id.org/eep#Procedure"/>
+        <Class IRI="#ExecutionProcedure"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="#triggeredOn"/>
             <DataOneOf>
@@ -389,6 +414,10 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Class IRI="http://purl.org/vocommons/voaf#Vocabulary"/>
         <NamedIndividual IRI="#"/>
     </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#deployedIn"/>
+        <ObjectProperty IRI="#deploys"/>
+    </InverseObjectProperties>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#belongsToPackage"/>
         <Class IRI="#Package"/>
@@ -572,34 +601,59 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal>root relative squared error</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+        <AnnotationProperty abbreviatedIRI="terms:source"/>
         <IRI>http://www.w3.org/ns/mls#Dataset</IRI>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <AnnotationProperty abbreviatedIRI="terms:created"/>
         <IRI>http://www.w3.org/ns/mls#Implementation</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date"></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <AnnotationProperty abbreviatedIRI="terms:creator"/>
         <IRI>http://www.w3.org/ns/mls#Implementation</IRI>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+        <AnnotationProperty abbreviatedIRI="terms:source"/>
         <IRI>http://www.w3.org/ns/mls#Implementation</IRI>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/source"/>
+        <AnnotationProperty abbreviatedIRI="terms:source"/>
         <IRI>http://www.w3.org/ns/mls#Model</IRI>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/mls#Process</IRI>
+        <Literal>Training process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="terms:hasVersion"/>
         <IRI>http://www.w3.org/ns/mls#Software</IRI>
         <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ExecutionProcedure</IRI>
+        <Literal>Represents the characteristic of a model deployment enviroment and how its  execution is triggered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#ExecutionProcedure</IRI>
+        <Literal>https://w3id.org/fides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExecutionProcedure</IRI>
+        <Literal>Execution Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#ExecutionProcedure</IRI>
+        <Literal>testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -622,7 +676,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#Package</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
@@ -652,7 +706,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal xml:lang="en">associated operating system</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#associatedOperatingSystem</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
@@ -672,7 +726,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal xml:lang="en">belongs to package</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#belongsToPackage</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
@@ -692,8 +746,28 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal>deployed in</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#deployedIn</IRI>
+        <Literal>testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deploys</IRI>
+        <Literal>The relation to stablish which model(s) is(are) deployed within a framework of deployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#deploys</IRI>
+        <Literal>https://w3id.org/fides</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deploys</IRI>
+        <Literal>deploys</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
+        <IRI>#deploys</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -712,7 +786,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal xml:lang="en">has file path</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#hasFilePath</IRI>
         <Literal>stable</Literal>
     </AnnotationAssertion>
@@ -732,7 +806,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal>performance metric</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#performanceMetric</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
@@ -752,7 +826,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal>related docker container</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#relatedDocekerContainer</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
@@ -772,7 +846,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal>stores prediction error value</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#storesPredictionErrorValue</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
@@ -792,7 +866,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal>stores prediction value</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#storesPredictionValue</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>
@@ -812,7 +886,7 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
         <Literal>triggered on</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <AnnotationProperty abbreviatedIRI="ns1:term_status"/>
         <IRI>#triggeredOn</IRI>
         <Literal>testing</Literal>
     </AnnotationAssertion>

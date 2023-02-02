@@ -143,10 +143,19 @@ ns1:term_status rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/fides#deployedIn
 :deployedIn rdf:type owl:ObjectProperty ;
+            owl:inverseOf :deploys ;
             rdfs:comment "The relation to stablish the framework of deployment for a given model" ;
             rdfs:isDefinedBy <https://w3id.org/fides> ;
             rdfs:label "deployed in" ;
             ns1:term_status "testing" .
+
+
+###  https://w3id.org/fides#deploys
+:deploys rdf:type owl:ObjectProperty ;
+         rdfs:comment "The relation to stablish which model(s) is(are) deployed within a framework of deployment" ;
+         rdfs:isDefinedBy "https://w3id.org/fides" ;
+         rdfs:label "deploys" ;
+         ns1:term_status "testing" .
 
 
 #################################################################
@@ -414,13 +423,18 @@ ns1:term_status rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/ns/mls#Model
 <http://www.w3.org/ns/mls#Model> rdf:type owl:Class ;
-                                 rdfs:subClassOf <https://w3id.org/eep#Executor> ;
+                                 rdfs:subClassOf <https://w3id.org/eep#Executor> ,
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :deployedIn ;
+                                                   owl:someValuesFrom :ExecutionProcedure
+                                                 ] ;
                                  terms:source "" .
 
 
 ###  http://www.w3.org/ns/mls#Process
 <http://www.w3.org/ns/mls#Process> rdf:type owl:Class ;
-                                   rdfs:subClassOf <https://w3id.org/eep#Procedure> .
+                                   rdfs:subClassOf <https://w3id.org/eep#Procedure> ;
+                                   rdfs:comment "Training process" .
 
 
 ###  http://www.w3.org/ns/mls#Software
@@ -431,49 +445,55 @@ ns1:term_status rdf:type owl:AnnotationProperty .
                                     terms:hasVersion "" .
 
 
-###  https://w3id.org/eep#Procedure
-<https://w3id.org/eep#Procedure> rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :associatedOperatingSystem ;
-                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                   owl:onDataRange [ rdf:type rdfs:Datatype ;
-                                                                     owl:oneOf [ rdf:type rdf:List ;
-                                                                                 rdf:first "Ubuntu" ;
-                                                                                 rdf:rest [ rdf:type rdf:List ;
-                                                                                            rdf:first "Unknown" ;
-                                                                                            rdf:rest [ rdf:type rdf:List ;
-                                                                                                       rdf:first "Windows10" ;
-                                                                                                       rdf:rest [ rdf:type rdf:List ;
-                                                                                                                  rdf:first "Windows7" ;
-                                                                                                                  rdf:rest rdf:nil
-                                                                                                                ]
-                                                                                                     ]
-                                                                                          ]
-                                                                               ]
-                                                                   ]
-                                                 ] ,
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :storesPredictionErrorValue ;
-                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                   owl:onDataRange xsd:boolean
-                                                 ] ,
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :storesPredictionValue ;
-                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                   owl:onDataRange xsd:boolean
-                                                 ] ,
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty :triggeredOn ;
-                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                   owl:onDataRange [ rdf:type rdfs:Datatype ;
-                                                                     owl:oneOf [ rdf:type rdf:List ;
-                                                                                 rdf:first "onEvent" ;
-                                                                                 rdf:rest [ rdf:type rdf:List ;
-                                                                                            rdf:first "onRequest" ;
-                                                                                            rdf:rest rdf:nil
-                                                                                          ]
-                                                                               ]
-                                                                   ]
-                                                 ] .
+###  https://w3id.org/fides#ExecutionProcedure
+:ExecutionProcedure rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/eep#Procedure> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :associatedOperatingSystem ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                        owl:oneOf [ rdf:type rdf:List ;
+                                                                    rdf:first "Ubuntu" ;
+                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                               rdf:first "Unknown" ;
+                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                          rdf:first "Windows10" ;
+                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                     rdf:first "Windows7" ;
+                                                                                                     rdf:rest rdf:nil
+                                                                                                   ]
+                                                                                        ]
+                                                                             ]
+                                                                  ]
+                                                      ]
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :storesPredictionErrorValue ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange xsd:boolean
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :storesPredictionValue ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange xsd:boolean
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :triggeredOn ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                        owl:oneOf [ rdf:type rdf:List ;
+                                                                    rdf:first "onEvent" ;
+                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                               rdf:first "onRequest" ;
+                                                                               rdf:rest rdf:nil
+                                                                             ]
+                                                                  ]
+                                                      ]
+                                    ] ;
+                    rdfs:comment "Represents the characteristic of a model deployment enviroment and how its  execution is triggered." ;
+                    rdfs:isDefinedBy "https://w3id.org/fides" ;
+                    rdfs:label "Execution Procedure" ;
+                    ns1:term_status "testing" .
 
 
 ###  https://w3id.org/fides#Package
