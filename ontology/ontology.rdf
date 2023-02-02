@@ -512,13 +512,13 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <rdf:Description rdf:about="https://w3id.org/eep#Execution">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/mls#specifiedBy"/>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#hasPerformanceMetric"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/fides#PerformanceMeasure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/mls#hasValue"/>
+                <owl:onProperty rdf:resource="https://w3id.org/fides#performaceValue"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>

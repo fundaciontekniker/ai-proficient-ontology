@@ -271,11 +271,11 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://w3id.org/eep#Execution
 <https://w3id.org/eep#Execution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
 _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fides#PerformanceMeasure> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/mls#specifiedBy> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#hasPerformanceMetric> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/eep#Execution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
 _:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/mls#hasValue> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fides#performaceValue> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://w3id.org/fides#ExecutionProcedure

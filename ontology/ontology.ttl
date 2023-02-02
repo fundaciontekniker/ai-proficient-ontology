@@ -303,11 +303,11 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/eep#Execution
 <https://w3id.org/eep#Execution> rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                   owl:onProperty <http://www.w3.org/ns/mls#specifiedBy> ;
+                                                   owl:onProperty :hasPerformanceMetric ;
                                                    owl:someValuesFrom :PerformanceMeasure
                                                  ] ,
                                                  [ rdf:type owl:Restriction ;
-                                                   owl:onProperty <http://www.w3.org/ns/mls#hasValue> ;
+                                                   owl:onProperty :performaceValue ;
                                                    owl:someValuesFrom xsd:string
                                                  ] .
 

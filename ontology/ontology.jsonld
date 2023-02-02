@@ -96,7 +96,7 @@
   "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/mls#specifiedBy"
+    "@id" : "https://w3id.org/fides#hasPerformanceMetric"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://w3id.org/fides#PerformanceMeasure"
@@ -105,7 +105,7 @@
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/mls#hasValue"
+    "@id" : "https://w3id.org/fides#performaceValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"

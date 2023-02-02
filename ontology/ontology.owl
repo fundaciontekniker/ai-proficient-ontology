@@ -241,14 +241,14 @@ The FIDES ontology has been developed as part of the AI-PROFICIENT project which
     <SubClassOf>
         <Class IRI="https://w3id.org/eep#Execution"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.w3.org/ns/mls#specifiedBy"/>
+            <ObjectProperty IRI="#hasPerformanceMetric"/>
             <Class IRI="#PerformanceMeasure"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="https://w3id.org/eep#Execution"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="http://www.w3.org/ns/mls#hasValue"/>
+            <DataProperty IRI="#performaceValue"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
